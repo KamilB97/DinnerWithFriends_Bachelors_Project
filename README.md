@@ -83,13 +83,9 @@ Bachelor's project
 
 ### Conversations view 
 
-<img src="readme_images/mobile_app/My_Groups.png" width="30%">
-
-<img src="readme_images/mobile_app/texting_within_group.png" width="30%">
+<img src="readme_images/mobile_app/My_Groups.png" width="30%"><img src="readme_images/mobile_app/texting_within_group.png" width="30%">
 
 
 ### Matched people view 
 
-<img src="readme_images/mobile_app/matched_list.png" width="30%">
-
-<img src="readme_images/mobile_app/chat_after_match.png" width="30%">
+<img src="readme_images/mobile_app/matched_list.png" width="30%"><img src="readme_images/mobile_app/chat_after_match.png" width="30%">
