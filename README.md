@@ -87,6 +87,6 @@ Bachelor's project
 
 
 ### Matched people view 
-<p float="left">
-<img src="readme_images/mobile_app/chat_after_match.png" width="30%"> <img src="readme_images/mobile_app/matched_list.png" width="30%">
+<p align="center">
+<img src="readme_images/mobile_app/chat_after_match.png" width="30%" hspace="10%"> <img src="readme_images/mobile_app/matched_list.png" width="30%">
 </p>
