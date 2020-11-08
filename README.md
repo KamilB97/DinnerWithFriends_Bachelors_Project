@@ -11,40 +11,40 @@ Bachelor's project
 ## Browser application
 
 ### Login page 
-<img src="readme_images/browser/login.PNG" width="70%">
+<img src="readme_images/browser/login.PNG" width="85%">
 
 ### Registration page 
-<img src="readme_images/browser/registration.PNG" width="70%">
+<img src="readme_images/browser/registration.PNG" width="85%">
 
 ### User profile 
-<img src="readme_images/browser/my_profile_edit.PNG" width="70%">
+<img src="readme_images/browser/my_profile_edit.PNG" width="85%">
 
 ### User profile edit option
-<img src="readme_images/browser/my_profile_edit.PNG" width="70%">
+<img src="readme_images/browser/my_profile_edit.PNG" width="85%">
 
 ### Main board 
-<img src="readme_images/browser/main_board.PNG" width="70%">
+<img src="readme_images/browser/main_board.PNG" width="85%">
 
 ### Accept friends 
-<img src="readme_images/browser/accept_friends.PNG" width="40%">
+<img src="readme_images/browser/accept_friends.PNG" width="35%">
 
 ### Texting interpersonal 
-<img src="readme_images/browser/texting_interpersonal.PNG" width="70%">
+<img src="readme_images/browser/texting_interpersonal.PNG" width=85%">
 
 ### Texting within conversation group 
-<img src="readme_images/browser/texting_group.PNG" width="70%">
+<img src="readme_images/browser/texting_group.PNG" width="85%">
 
 ### Add to conversation group 
-<img src="readme_images/browser/add_to_group.PNG" width="70%">
+<img src="readme_images/browser/add_to_group.PNG" width="85%">
 
 ### Find restaurant
-<img src="readme_images/browser/map_find_locals.PNG" width="70%">
+<img src="readme_images/browser/map_find_locals.PNG" width="85%">
 
 ### Find restaurant
-<img src="readme_images/browser/map_walk.PNG" width="70%">
+<img src="readme_images/browser/map_walk.PNG" width="85%">
 
 ### Matching 
-<img src="readme_images/browser/matching.PNG" width="70%">
+<img src="readme_images/browser/matching.PNG" width="85%">
 
 ## Mobile Application
 
