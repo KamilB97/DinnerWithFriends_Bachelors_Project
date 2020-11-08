@@ -11,10 +11,10 @@ Bachelor's project
 ## Browser application
 
 ### Login page 
-<img src="readme_images/browser/login.png">
+<img src="readme_images/browser/login.PNG">
 
 ### Registration page 
-<img src="readme_images/browser/registration.png">
+<img src="readme_images/browser/registration.PNG">
 
 ### User profile 
 <img src="readme_images/browser/my_profile_edit.png">
