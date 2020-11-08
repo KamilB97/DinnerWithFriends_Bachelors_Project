@@ -2,4 +2,4 @@
 Bachelor's project
 
 
-<img src="readme_images/database/db_schema.png"
+<img src="readme_images/database/db_schema.png">
