@@ -60,18 +60,18 @@ Bachelor's project
 <img src="readme_images/mobile_app/MyProfile-description_after_swap_down.png" width="30%">
 
 ### Add friends view 
-<img src="readme_images/mobile_app/add_friends.png" width="30%">
+<img src="readme_images/mobile_app/add_friends.PNG" width="30%">
 
 ### Matching view 
-<img src="readme_images/mobile_app/Screenshot_20191205-155245.png.png" width="30%">
+<img src="readme_images/mobile_app/Screenshot_20191205-155245.png" width="30%">
 
-<img src="readme_images/mobile_app/Screenshot_20191205-155253.png.png" width="30%">
+<img src="readme_images/mobile_app/Screenshot_20191205-155253.png" width="30%">
 
 <img src="readme_images/mobile_app/matching_swap_annimation_v1.png" width="30%">
 
 ### Friends list view 
 
-<img src="readme_images/mobile_app/Friends%list.png" width="30%">
+<img src="readme_images/mobile_app/Friends list.png" width="30%">
 
 <img src="readme_images/mobile_app/Texting_interpersona.png" width="30%">
 
@@ -83,9 +83,9 @@ Bachelor's project
 
 ### Conversations view 
 
-<img src="readme_images/mobile_app/Friends%list.png" width="30%">
+<img src="readme_images/mobile_app/My_Groups.png" width="30%">
 
-<img src="readme_images/mobile_app/My_groups.png" width="30%">
+<img src="readme_images/mobile_app/texting_within_group.png" width="30%">
 
 
 ### Matched people view 
