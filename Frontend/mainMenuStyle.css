@@ -1,0 +1,585 @@
+body {
+  /* background: url(blackboard.jpg);
+  background-size: 1550px 760px;*/
+  margin: 0;
+  background-color: black;
+  padding: 0;
+  overflow: hidden;
+  /*background: #e84118;*/
+}
+
+#backgroundDiv {
+  float: left;
+  z-index: -20;
+  position: absolute;
+  left: 16%;
+  width: 90%;
+  height: 655px;
+  background: url(background_registration_pp.png);
+  background-size: 1300px 690px;
+  /* background-size: 1550px 690px; */
+}
+
+#leftbar {
+  float: left;
+  z-index: -3;
+  position: relative;
+  width: 16.38%;
+  height: 655px;
+  background: #b5b8b5;
+  cursor: pointer;
+}
+#friends-scrollbox {
+  position: relative;
+  top: 2px;
+}
+
+.tag-txt {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 22px;
+  width: 250px;
+  font-size: 17px;
+}
+
+.leftbar-entity {
+  float: left;
+  z-index: 1;
+  position: relative;
+  height: 50px;
+  width: 243px;
+  /* border-bottom: 1px black solid;*/
+  background: #e7ece7;
+}
+.leftbar-entity:hover {
+  background: #d3d6d3;
+}
+
+.profile-image {
+  z-index: 2;
+  position: relative;
+
+  float: left;
+  background: red;
+  height: 40px;
+  width: 40px;
+}
+.leftbar-msg-btn {
+  float: right;
+  z-index: 400;
+  width: 35px;
+  height: 35px;
+  position: relative;
+  top: -58px;
+  left: -3px;
+  right: 0px;
+  bottom: 0px;
+}
+.dropdownProfile-image {
+  z-index: 151;
+  position: relative;
+  top: 4px;
+  margin-left: 4px;
+  float: left;
+  border-radius: 50%;
+  height: 42px;
+  width: 42px;
+}
+.entity-txt {
+  display: flex;
+  position: relative;
+  left: 10px;
+  padding-top: 15px;
+  height: 50px;
+  width: 145px;
+}
+.leftbar-conversation-name {
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  left: 0px;
+  padding-top: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 50px;
+  width: 222px;
+}
+
+#matched-scrollbox {
+  position: relative;
+  top: 2px;
+}
+
+#conversation-scrollbox {
+  position: relative;
+  top: 2px;
+}
+
+.tag {
+  float: left;
+  position: relative;
+  top: 1px;
+  bottom: 1px;
+  height: 22px;
+  width: 250px;
+}
+
+#newConversation-div {
+  display: flex;
+  float: left;
+  z-index: 180;
+  position: fixed;
+  top: 684px;
+  border-top: 1px black solid;
+  height: 36px;
+  width: 251px;
+  background-color: #2c6d24;
+  text-align: center;
+  display: block;
+}
+
+#newConversation-div img {
+  position: relative;
+  top: 2.5px;
+  height: 30px;
+  width: 30px;
+}
+#newConversation-div img:hover {
+  position: relative;
+  top: 0px;
+  height: 35px;
+  width: 35px;
+}
+
+#middlebar {
+  display: flex;
+  float: left;
+  padding-top: 0px;
+  position: relative;
+  top: 17px;
+  bottom: 17px;
+  left: 150px;
+  right: 140px;
+  width: 989px;
+  height: 623px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.411);
+  visibility: hidden;
+}
+#chat-header {
+  float: left;
+  position: absolute;
+  z-index: 50;
+  top: 6px;
+  left: 6px;
+  right: 5px;
+  height: 50px;
+  width: 974px;
+  border-radius: 10px;
+  border: 1px gray solid;
+  background: #2c6d24;
+}
+
+.headerTitle {
+  background-color: purple;
+}
+.conversationHeaderTitle {
+  position: absolute;
+  top: 13px;
+  text-align: center;
+  font-size: 18px;
+  width: 870px;
+  font-weight: bolder;
+}
+
+.chat-head-img {
+  float: right;
+  height: 39px;
+  width: 39px;
+  margin-right: 4px;
+  margin-top: 3px;
+  margin-left: 5px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.chat-head-img:hover {
+  float: right;
+  height: 44px;
+  width: 44px;
+  margin-right: 5px;
+  margin-top: 3px;
+  z-index: 100;
+}
+#addToConv-btn {
+  float: right;
+  height: 30px;
+  width: 30px;
+  margin-right: 4px;
+  margin-top: 10px;
+  margin-left: 5px;
+  z-index: 100;
+  cursor: pointer;
+}
+#addToConv-btn:hover {
+  height: 35px;
+  width: 35px;
+  margin-right: 5px;
+  margin-top: 7px;
+  z-index: 100;
+}
+
+/*#add-friend {
+  float: right;
+  height: 39px;
+  width: 39px;
+  margin-right: 4px;
+  margin-top: 3px;
+  margin-left: 5px;
+  z-index: 100;
+} */
+
+#chat-body {
+  float: left;
+  padding: 5px 10px;
+  position: absolute;
+  top: 65px;
+  left: 6px;
+  right: 5px;
+  height: 90%;
+  width: 99%;
+  border-radius: 10px;
+
+  background: #b5b8b517;
+}
+#participantsBar {
+  position: relative;
+  left: 802px;
+  top: 65px;
+  width: 180px;
+  height: 489px;
+  padding-top: 4px;
+  background-color: #b5b8b517;
+  float: right;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  overflow-y: auto;
+}
+.participantsBar-entity {
+  float: left;
+  z-index: 1;
+  position: relative;
+  left: 4px;
+  right: 4px;
+  height: 45px;
+  width: 172px;
+  border-radius: 10px;
+  margin-bottom: 4px;
+  /* border-bottom: 1px black solid;*/
+  background: #e7ece7;
+  cursor: pointer;
+}
+.participantsBar-entity:hover {
+  background-color: rosybrown;
+}
+.conversationParticipantsNames {
+  position: relative;
+  top: 12px;
+  font-size: 14px;
+  margin-left: 7px;
+}
+.participantsBar-entity img {
+  position: relative;
+  float: left;
+  top: 5px;
+  left: 2px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.position-div {
+  float: left;
+  position: relative;
+  min-height: 45px;
+  width: 100%;
+  /*background-color: pink; */
+  margin-top: 1px;
+}
+.message-box {
+  float: left;
+
+  position: relative;
+
+  margin: 5px 0px 5px 0px;
+  display: inline-block;
+  min-height: 45px;
+  min-width: 150px;
+  padding: 7px 15px 7px 15px;
+  border-radius: 15px;
+  background: #e7ece7;
+}
+
+.message-box-this {
+  float: left;
+
+  position: relative;
+
+  margin: 5px 0px 5px 20px;
+  display: inline-block;
+  min-height: 45px;
+  min-width: 150px;
+  padding: 7px 15px 7px 15px;
+  border-radius: 15px;
+  background: #359c27;
+}
+
+.message-sender {
+  float: left;
+  margin-right: 50px;
+  font-weight: bold;
+  padding-bottom: 7px;
+}
+
+.message-date {
+  float: right;
+}
+.message {
+  float: left;
+}
+
+#chat-bottom {
+  position: absolute;
+  top: 566px;
+  left: 6px;
+  right: 5px;
+  min-height: 50px;
+  border-radius: 10px;
+  width: 976px;
+  background: #2c6d24;
+  visibility: hidden;
+}
+
+#chat-bottom input[type="text"] {
+  border: 1px solid #fff;
+  margin: 5px 7px 5px 5px;
+  background-color: white;
+  min-height: 45px;
+  min-width: 897px;
+  min-height: 40px;
+  font-size: 14px;
+  text-align: left;
+  border-radius: 15px;
+  padding: 0px 10px;
+}
+#message_button {
+  z-index: -3;
+  text-align: center;
+  vertical-align: middle;
+  height: 35px;
+  width: 35px;
+  border-radius: 4px;
+  color: green;
+  cursor: pointer;
+}
+#message_button:hover {
+  color: red;
+  height: 39px;
+  width: 39px;
+}
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #2c6d24;
+  border-radius: 30px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  border-radius: 30px;
+}
+
+/*#friends-scrollbox img {
+  z-index: 151;
+  position: relative;
+  float: left;
+   background: red; @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+  height: 48px;
+  width: 48px;
+}*/
+
+/*  CSS ADD PARTICIPANTS TO CONVERSATIONS  */
+.dropdown-createConversation a {
+  color: black;
+  padding: 0px 16px;
+  border-top: 1px grey solid;
+  text-decoration: none;
+  display: block;
+  height: 6 0px;
+  z-index: 200;
+}
+#conversationDropdown {
+  position: absolute;
+  top: 462px;
+  background-color: #e7ece7;
+  min-width: 250px;
+  height: 156px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 200;
+}
+#conversationDropdown [type="text"] {
+  width: 175px;
+}
+.addParticipants-div {
+  margin-top: 2px;
+}
+.addParticipants-div span:hover {
+  margin-left: 20px;
+  font-weight: bold;
+}
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+.autocomplete {
+  /*the container must be positioned relative:*/
+  position: relative;
+  display: inline-block;
+  margin-top: 1px;
+}
+#suggestionBox input {
+  border: 1px solid transparent;
+  background-color: #f1f1f1;
+  padding: 5px;
+  font-size: 16px;
+}
+#suggestionBox input[type="text"] {
+  float: left;
+  background-color: #b5b8b5;
+  width: 87%;
+}
+#addToConvBar-btn {
+  background: #fb2525;
+  position: absolute;
+  top: 27%;
+  left: 75%;
+
+  color: #000;
+  width: 25%;
+  height: 30px;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  /*background-color: #4CAF50;*/
+  border: none;
+  border-radius: 4px;
+}
+
+#suggestionBox button:hover {
+  background: #ffc107;
+  color: #000;
+}
+
+#suggestionBox button:active {
+  background-color: #3e8e41;
+  transform: translateY(4px);
+}
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 120;
+  /*position the autocomplete items to be the same width as the container:*/
+  width: 250px;
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  border-bottom: 1px solid #d4d4d4;
+}
+.autocomplete-items div:hover {
+  /*when hovering an item:*/
+  background-color: #e9e9e9;
+}
+.autocomplete-active {
+  /*when navigating through the items using the arrow keys:*/
+  background-color: DodgerBlue !important;
+  color: #ffffff;
+}
+
+#addToConvChatPanel {
+  position: absolute;
+  visibility: hidden;
+  top: 9.3%;
+  left: 71.3%;
+  padding-top: 1%;
+  padding-left: 1%;
+  padding-right: 1%;
+  width: 255px;
+  height: 260px;
+  overflow: auto;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  z-index: 305;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  background-color: #e7ece7;
+}
+#addToConvChatPanel [type="text"] {
+  width: 175px;
+}
+#addToConvChat-btn {
+  background: #2c6d24;
+  position: absolute;
+  top: 11%;
+  left: 71.5%;
+
+  color: #fff;
+  width: 25%;
+  height: 30px;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  /*background-color: #4CAF50;*/
+  border: none;
+  border-radius: 4px;
+}
+#addToConvChat-btn:hover {
+  background: #ffc107;
+  color: #000;
+}
+
+#addToConvChat-btn:active {
+  background-color: #3e8e41;
+  transform: translateY(4px);
+}
+#addToConvChat-btn span {
+  margin-bottom: 20px;
+}
+
+#suggestionBoxChat input {
+  border: 1px solid transparent;
+  background-color: #f1f1f1;
+  padding: 5px;
+  font-size: 16px;
+}
+#suggestionBoxChat input[type="text"] {
+  float: left;
+  background-color: #b5b8b5;
+  width: 87%;
+}

@@ -1,0 +1,31 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#map {
+  position: absolute;
+  top: 9.1%;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+
+  height: 90%;
+  width: 100%;
+}
+#search {
+  visibility: visible;
+  position: absolute;
+  width: 35%;
+  height: 40px;
+  top: 12%;
+  bottom: 0px;
+  left: 32.5%;
+  right: 0px;
+  z-index: 140;
+  text-align: center;
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ new CSS @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */

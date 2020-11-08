@@ -1,0 +1,301 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+#loginpage {
+  height: 790px;
+  width: cover;
+  background: url(background_login.png);
+  background-color: white;
+  background-size: cover;
+  background-position: inherit;
+  font-family: sans-serif;
+}
+
+.loginbox {
+  width: 320px;
+  height: 420px;
+  background: #000;
+  opacity: 0.96;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+}
+
+.avatar {
+  width: 108px;
+  height: 88px;
+  position: absolute;
+  top: -44px;
+  left: calc(50% - 50px);
+}
+
+h1 {
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 22px;
+}
+
+.loginbox p {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+.loginbox input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.loginbox input[type="text"],
+.loginbox input[type="password"] {
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.loginbox input[type="submit"] {
+  margin: 15px 0px;
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #fb2525;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+.loginbox button {
+  margin: 15px 0px;
+  border: none;
+  outline: none;
+  height: 40px;
+  width: 100%;
+  background: #fb2525;
+  color: #fff;
+  font-size: 18px;
+  margin-top: 25px;
+  border-radius: 20px;
+}
+.loginbox button:hover {
+  cursor: pointer;
+  background: #ffc107;
+  color: #000;
+}
+
+.loginbox input[type="submit"]:hover {
+  cursor: pointer;
+  background: #ffc107;
+  color: #000;
+}
+.loginbox a {
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 20px;
+  color: darkgrey;
+}
+
+.loginbox a:hover {
+  color: #ffc107;
+}
+
+.loginChangePageButton {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: calc(100% - 50px - 20px);
+  left: calc(50% - 50px);
+}
+
+.loginChangePageButton button {
+  height: 60px;
+  width: 85px;
+  background: url(arrow_down.png);
+  background-size: cover;
+  border: none;
+  opacity: 0.35;
+  outline: none;
+}
+
+.loginChangePageButton :hover {
+  opacity: 0.98;
+  cursor: pointer;
+}
+
+#registrationpage {
+  height: 790px;
+  width: cover;
+
+  background: url(background_registration_pp.png);
+  background-color: red;
+  background-size: cover;
+  background-position: inherit;
+  font-family: sans-serif;
+}
+
+.registrationChangePageButton {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: calc(100% + 50px + 90px);
+  left: calc(50% - 50px);
+}
+
+.registrationChangePageButton button {
+  height: 60px;
+  width: 85px;
+  background: url(arrow_up.png);
+  background-size: cover;
+  border: none;
+  opacity: 0.35;
+  outline: none;
+}
+
+.registrationChangePageButton :hover {
+  opacity: 0.98;
+  cursor: pointer;
+}
+
+.registrationbox {
+  width: 620px;
+  height: 440px;
+  background: #000;
+  opacity: 0.85;
+  color: #fff;
+  top: 173%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+
+  padding: 40px 30px;
+}
+.registrationbox h1 {
+  margin: 0;
+  padding: 0 0 35px;
+  text-align: center;
+  font-size: 22px;
+}
+
+.registrationbox p {
+  margin: 10px;
+  padding: 0;
+  height: 40px;
+  font-weight: bold;
+  display: inline-block;
+  width: 140px;
+  position: relative;
+  left: 12.5%;
+
+  text-align: right;
+}
+
+.registrationbox input[type="text"],
+.registrationbox input[type="password"] {
+  border: none;
+  margin: 0px;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  position: relative;
+  left: 12.5%;
+
+  color: #fff;
+  font-size: 16px;
+}
+
+.registrationbox input[type="submit"] {
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #fb2525;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+
+  width: 50%;
+
+  position: relative;
+  left: 25%;
+
+  margin-top: 4px;
+  margin-bottom: 0px;
+}
+.registrationbox button {
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #fb2525;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+
+  width: 50%;
+
+  position: relative;
+  left: 25%;
+
+  margin-top: 8px;
+  margin-bottom: 0px;
+}
+
+.registrationbox button:hover {
+  cursor: pointer;
+  background: #ffc107;
+  color: #000;
+}
+
+.register_avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: calc(50% - 50px);
+}
+
+#warning {
+  visibility: hidden;
+  position: absolute;
+  left: 0px;
+  text-align: center;
+  width: 100%;
+  color: #fb2525;
+  font-size: 12px;
+}
+#loginWarning {
+  visibility: hidden;
+  position: absolute;
+  left: 0px;
+  text-align: center;
+  width: 100%;
+  color: #fb2525;
+  font-size: 12px;
+}
+#emailValid {
+  visibility: hidden;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  left: 175px;
+  top: 110px;
+}

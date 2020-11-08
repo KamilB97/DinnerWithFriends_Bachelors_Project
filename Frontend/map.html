@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DinnerApp</title>
+    <link rel="stylesheet" type="text/css" href="map.css">
+    <link rel="stylesheet" type="text/css" href="topbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="initial-scale=1.0" />
+    <script src="map.js"></script>
+    <script src="mainMenuDropDownList.js"></script>
+
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+         * element that contains the map. */
+     
+     
+      /* Optional: Makes the sample page fill the window. */
+     
+    </style>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+
+
+<div id="topbar">
+		
+  <div class="search-box">
+    <input class ="search-txt" type="text" name="" placeholder="type to search"> </input>
+    <a class="search-btn" href="#">
+    <i class="fa fa-search"></i>
+    </a>
+  </div>
+    
+  <div id="mainmenu-div" class="topbar-section topbar-section-padding" onclick="location.href='mainMenu.html';">
+      <span id="mainmenu-text">Główna</span>
+    </div>
+    <div id="profile-div" class="topbar-section topbar-section-padding" onclick="location.href='myProfilePage.html';">
+      <i  class="fa fa-user-circle fa-2x" aria-hidden="true"></i>
+      <span id="profile-text">Profil</span>
+    </div>
+    <div id="match-div" class="topbar-section topbar-section-padding" onclick="location.href='matchPage.html';">
+      <span id="match-text">Parowanie</span>
+    </div>
+    <div id="invitations-div" class="topbar-section" >
+      <div id = invitations-btn onclick="initInviteList();">
+      <i class="fa fa-user-plus fa-2x" aria-hidden="true" ></i>
+      </div>
+    </div>
+    <div id="settings-div" class="topbar-section" onclick="showSettingsDropbar();">
+        <div id = settings-btn onclick="">
+          <i class="fa fa-cog fa-3x"></i>
+        </div>
+        <div id="settingsDropdown" >
+          <div class="topBarDropDown-entity" onclick="location.href='changePassword.html';">
+            <span class="dropdownEntity-txt">Zmień hasło</span>
+          </div>
+          <div class="topBarDropDown-entity" onclick="location.href='changePassword.html';">
+            <span class="dropdownEntity-txt">Zmień numer telefonu</span>
+          </div>
+          <div class="topBarDropDown-entity" onclick="location.href='loginPage.html';">
+            <span class="dropdownEntity-txt">Wyloguj</span>
+          </div>
+        </div>
+    </div>
+		
+		</div>
+    <div id = "middleContainer">
+
+      
+    </div>
+    
+    <div id="map"></div>
+    <div class="col">
+      <input
+        class="form-control"
+        id="search"
+        type="text"
+        placeholder="Search..."
+      />
+      <button
+        style="height: 0px; width: 0px; background-color: blue; visibility: hidden;"
+        onclick="clickHandler();"
+        id="searchButton"
+        value="Button"
+      >
+        Click
+      </button>
+    </div>
+  
+   
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDiLsuL6Cqps67aF_97GpQ_pIm_H3FkQGE&callback=initMap&libraries=places&sensor=false"
+    >
+      async
+      defer
+    </script>
+    <script></script>
+  </body>
+</html>

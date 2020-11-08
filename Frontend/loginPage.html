@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DinnerApp</title>
+
+    <link rel="stylesheet" type="text/css" href="loginPage.css" />
+    <script src="loginPage.js"></script>
+  </head>
+
+  <body>
+    <div id="loginpage">
+      <div class="loginbox">
+        <img src="logo.png" class="avatar" />
+        <h1>Login Here</h1>
+        <form>
+          <p>Nazwa użytkownika</p>
+          <input
+            type="text"
+            name=""
+            placeholder="Wpisz nazwę użytkownika"
+            id="loginEmail"
+          />
+          <p>Hasło</p>
+          <input
+            type="password"
+            name=""
+            placeholder="wprowadź hasło"
+            id="loginPassword"
+          />
+        </form>
+        <span id="loginWarning">*hk </span>
+        <button id="login_button" onclick="login()">Zaloguj</button>
+
+        <form>
+          <a href="#">Zapomniałeś hasła?</a><br />
+          <a onclick="goToRegistrationPage()">Nie masz konta?</a>
+        </form>
+      </div>
+
+      <div class="loginChangePageButton">
+        <button id="button_down" onclick="goToRegistrationPage()" />
+      </div>
+    </div>
+
+    <div id="registrationpage">
+      <div class="registrationChangePageButton">
+        <button id="button_up" onclick="goToLoginPage()" />
+      </div>
+
+      <div class="registrationbox">
+        <h1>Rejestracja</h1>
+        <form>
+          <img id="emailValid" src=""></img>
+          <p>Email</p>
+          <input type="text" name="" placeholder="wpisz email" id="email" />
+
+          <br />
+          <p>Numer telefonu</p>
+          <input
+            type="text"
+            name=""
+            placeholder="wpisz numer telefonu"
+            id="phone"
+          /><br />
+          <p>Hasło</p>
+          <input
+            type="password"
+            name=""
+            placeholder="wpisz hasło"
+            id="password"
+          /><br />
+          <p>Powtórz hasło</p>
+          <input
+            type="password"
+            name=""
+            placeholder="powtórz hasło"
+            id="repeatPassword"
+          /><br />
+        </form>
+        <span id="warning">*Hasła nie pasują do siebie</span><br />
+        <button id="register_button" onclick="register()">Rejestruj</button>
+      </div>
+    </div>
+  </body>
+</html>

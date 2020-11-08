@@ -1,0 +1,265 @@
+#topbar {
+  display: flex;
+  width: cover;
+  margin: 0 auto;
+  background: #2c6d24;
+  height: 66px;
+}
+.topbar-section {
+  display: flex;
+  float: left;
+  border-left: 1px grey solid;
+  height: 100%;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 66px;
+
+  cursor: pointer;
+}
+.topbar-section-padding {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+#mainmenu-text {
+  font-weight: bold;
+  transition: 0.4s;
+  font-size: 90%;
+  position: relative;
+  font-size: 24px;
+}
+#mainmenu-div:hover > #mainmenu-text {
+  color: white;
+}
+
+#profile-text {
+  font-weight: bold;
+
+  transition: 0.4s;
+  font-size: 90%;
+  position: relative;
+  font-size: 24px;
+}
+#profile-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+#profile-div i {
+  transition: 0.4s;
+  font-size: 90%;
+  margin-right: 2px;
+  position: relative;
+  font-size: 24px;
+}
+#profile-div:hover > #profile-text {
+  color: white;
+}
+#profile-div:hover > i {
+  color: white;
+}
+#match-text {
+  font-weight: bold;
+  transition: 0.4s;
+  font-size: 90%;
+  position: relative;
+  font-size: 24px;
+}
+#match-div:hover > #match-text {
+  color: white;
+}
+
+#settings-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+
+#settingsDropdown {
+  position: absolute;
+  visibility: hidden;
+  top: 66px;
+  background-color: #2c6d24;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  min-width: 220px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 150;
+}
+#settings-btn {
+  position: relative;
+
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+}
+
+#settings-btn:hover,
+#settings-div:focus {
+  color: white;
+}
+
+#invitations-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+#invitations-btn:hover,
+#invitations-div:focus {
+  color: white;
+}
+
+.search-box {
+  float: left;
+  margin-left: 30px;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  margin-right: 30px;
+  background: #2f3640;
+  height: 30px;
+  border-radius: 40px;
+  padding: 10px;
+}
+
+.search-btn {
+  color: #e7ece7;
+  float: right;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #2f3640;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-box:hover > .search-btn {
+  background: #2c6d24;
+}
+.search-txt {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: white;
+  font-size: 17px;
+  transition: 0.4s;
+  line-height: 35px;
+  width: 0px;
+}
+.search-box:hover > .search-txt {
+  width: 240px;
+  padding: 0 6px;
+}
+
+.dropdown-content {
+  /* display: none*/
+
+  position: absolute;
+  top: 66px;
+  background-color: #2c6d24;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  min-width: 220px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 150;
+}
+#myDropdown {
+  visibility: hidden;
+}
+.dropdown-content a {
+  color: black;
+  padding: 0px 16px;
+  border-top: 1px grey solid;
+  text-decoration: none;
+  display: block;
+  height: 6 0px;
+}
+.dropdown-content a:hover {
+  background-color: #009900;
+}
+
+.topBarDropDown-entity {
+  display: block;
+  z-index: 1;
+
+  margin-top: 3px;
+  height: 50px;
+  width: 233px;
+  background: #e7ece7;
+}
+
+.topBarDropDown-entity:hover {
+  background: #a3a3a3;
+}
+.acceptInv-btn {
+  position: absolute;
+  top: 2px;
+  right: 22px;
+  margin-right: 8px;
+  width: 15px;
+  height: 15px;
+}
+.acceptInv-btn:hover {
+  width: 19px;
+  height: 19px;
+}
+.denialInv-btn {
+  position: absolute;
+  top: 2px;
+  right: 0px;
+
+  margin-right: 6px;
+  width: 15px;
+  height: 15px;
+}
+.denialInv-btn:hover {
+  width: 19px;
+  height: 19px;
+}
+
+.accDen-div {
+  position: relative;
+  top: 27px;
+  float: right;
+  width: 50px;
+  height: 22px;
+  /* background-color: purple;*/
+  z-index: 300;
+}
+
+.dropdownInv-image {
+  z-index: 151;
+  position: relative;
+  top: 2px;
+  left: 2px;
+  float: left;
+  border-radius: 50%;
+  height: 45.5px;
+  width: 45px;
+}
+.dropdownEntity-txt {
+  position: relative;
+  bottom: 8px;
+  justify-content: center;
+  text-align: center;
+  font-size: 15px;
+  height: 50px;
+  width: 103px;
+}
+
+#invitations-btn {
+  position: relative;
+  top: 5px;
+  height: 100%;
+  width: 100%;
+  /* background-color: blueviolet;*/
+  padding-left: 42px;
+  padding-right: 40px;
+}

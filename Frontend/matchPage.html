@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DinnerApp</title>
+	<link rel="stylesheet" type="text/css" href="matchPageStyle.css">
+	<link rel="stylesheet" type="text/css" href="topbar.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="matchPageScript.js"></script>
+	<script src="mainMenuDropDownList.js"></script>
+</head>
+<body>
+	<div id="topbar">
+		
+		<div class="search-box">
+			<input class ="search-txt" type="text" name="" placeholder="type to search"> </input>
+			<a class="search-btn" href="#">
+			<i class="fa fa-search"></i>
+			</a>
+		</div>
+				
+			<div id="mainmenu-div" class="topbar-section topbar-section-padding" onclick="location.href='mainMenu.html';">
+				<span id="mainmenu-text">Główna</span>
+			</div>
+			<div id="profile-div" class="topbar-section topbar-section-padding" onclick="location.href='myProfilePage.html';">
+				<i  class="fa fa-user-circle fa-2x" aria-hidden="true"></i>
+				<span id="profile-text">Profil</span>
+			</div>
+			<div id="match-div" class="topbar-section topbar-section-padding" onclick="location.href='matchPage.html';">
+				<span id="match-text">Parowanie</span>
+			</div>
+			<div id="invitations-div" class="topbar-section" >
+				<div id = invitations-btn onclick="initInviteList();">
+				<i class="fa fa-user-plus fa-2x" aria-hidden="true" ></i>
+				</div>
+			</div>
+			<div id="settings-div" class="topbar-section" onclick="showSettingsDropbar();">
+					<div id = settings-btn onclick="">
+						<i class="fa fa-cog fa-3x"></i>
+					</div>
+					<div id="settingsDropdown" >
+						<div class="topBarDropDown-entity" onclick="location.href='changePassword.html';">
+							<span class="dropdownEntity-txt">Zmień hasło</span>
+						</div>
+						<div class="topBarDropDown-entity" onclick="location.href='changePassword.html';">
+							<span class="dropdownEntity-txt">Zmień numer telefonu</span>
+						</div>
+						<div class="topBarDropDown-entity" onclick="location.href='loginPage.html';">
+							<span class="dropdownEntity-txt">Wyloguj</span>
+						</div>
+					</div>
+			</div>
+	</div>
+	
+	<div id = "middleSection">
+		<div id="middlebox"> 
+			
+			<div id="cardBox">
+			
+				<div id="top-body">
+					<div id="about-profile" class="box">
+						<Span id="about-title" > O sobie <span><br>
+						
+						<textarea readonly id= "about-textarea">
+						</textarea>
+					</div>   
+				</div>
+
+				<div id="bottom-body">
+						<div id="informations-profile">	
+							<div id="informations-titlebox" class="titlebox">
+								<Span id="informations-title" class="title"> Informacje: <span>
+							</div>
+							<div id="informations-body" class="profilePageBody">
+								<span>Imię i nazwisko: </span>
+								<span id ="name-span"></span><br>
+								<span>wiek: </span>
+								<span id ="age-span"></span><br>
+								<span>Płeć: </span>
+								<span id ="gender-span"></span><br>
+								<span>Miasto: </span>
+								<span id = "city-span"></span>
+							</div>	
+						</div>	
+					</div>
+
+
+		</div>
+		
+
+			<div id="denialButton" onclick="notInterestedButtonEvent();">
+			<img id="denialArrow" src="left_yellow_arrow.png">
+			</div> 
+			
+		
+			<div id="acceptButton" onclick="interestedButtonEvent();">
+					<img id="acceptArrow" src="right_yellow_arrow.png">
+			
+			</div>
+			
+			<script>
+					document.getElementById("denialArrow").onmouseover = function() 
+					{
+						document.getElementById("denialArrow").src = "left_green_arrow.png"
+					}
+					document.getElementById("denialArrow").onmouseleave = function() 
+					{
+						document.getElementById("denialArrow").src = "left_yellow_arrow.png"
+					}
+
+					document.getElementById("acceptButton").onmouseover = function() 
+					{
+						document.getElementById("acceptArrow").src = "right_green_arrow.png"
+					}
+					document.getElementById("acceptButton").onmouseleave = function() 
+					{
+						document.getElementById("acceptArrow").src = "right_yellow_arrow.png"
+					}
+
+
+					</script>
+		
+	</div>
+	</div>
+	
+
+</body>
+</html>

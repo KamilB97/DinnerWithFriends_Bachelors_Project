@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_friends"
+        android:icon="@drawable/match"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/navigation_conversation"
+        android:icon="@drawable/users_group2"
+        android:title="@string/title_dashboard" />
+
+    <item
+        android:id="@+id/navigation_matched"
+        android:icon="@drawable/hand_shake"
+        android:title="@string/title_notifications" />
+
+</menu>

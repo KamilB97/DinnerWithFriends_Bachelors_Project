@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DinnerApp</title>
+	<link rel="stylesheet" type="text/css" href="myProfilePageStyle.css">
+	<link rel="stylesheet" type="text/css" href="topbar.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="myProfilePageScript.js"></script>
+	<script src="mainMenuDropDownList.js"></script>
+</head>
+	
+<body>
+
+
+		<script
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDiLsuL6Cqps67aF_97GpQ_pIm_H3FkQGE&libraries=places&sensor=false"
+	  >
+		async
+		defer
+	  </script>
+  
+	
+
+	
+
+			<div id="topbar">
+		
+				<div class="search-box">
+					<input class ="search-txt" type="text" name="" placeholder="type to search"> </input>
+					<a class="search-btn" href="#">
+					<i class="fa fa-search"></i>
+					</a>
+				</div>
+					
+				<div id="mainmenu-div" class="topbar-section topbar-section-padding" onclick="location.href='mainMenu.html';">
+						<span id="mainmenu-text">Główna</span>
+				</div>
+				<div id="profile-div" class="topbar-section topbar-section-padding" onclick="location.href='myProfilePage.html';">
+						<i  class="fa fa-user-circle fa-2x" aria-hidden="true"></i>
+						<span id="profile-text">Profil</span>
+				</div>
+				<div id="match-div" class="topbar-section topbar-section-padding" onclick="location.href='matchPage.html';">
+						<span id="match-text">Parowanie</span>
+				</div>
+				<div id="invitations-div" class="topbar-section" >
+						<div id = invitations-btn onclick="initInviteList();">
+						<i class="fa fa-user-plus fa-2x" aria-hidden="true" ></i>
+						</div>
+				</div>
+				<div id="settings-div" class="topbar-section" onclick="showSettingsDropbar();">
+						<div id = settings-btn onclick="">
+							<i class="fa fa-cog fa-3x"></i>
+						</div>
+						<div id="settingsDropdown" >
+							<div class="topBarDropDown-entity" onclick="location.href='changePassword.html';">
+								<span class="dropdownEntity-txt">Zmień hasło</span>
+							</div>
+							<div class="topBarDropDown-entity" onclick="location.href='changePassword.html';">
+								<span class="dropdownEntity-txt">Zmień numer telefonu</span>
+							</div>
+							<div class="topBarDropDown-entity" onclick="location.href='loginPage.html';">
+								<span class="dropdownEntity-txt">Wyloguj</span>
+							</div>
+						</div>
+				</div>
+			</div>
+					
+
+		<div id = "middleSection">
+					<div id="profilePanel">
+					<div id="top-body">
+						<div id="image-div">
+								<!--<img src="profilowe.jpg" id="profile-img"> -->
+								<div class="image-preview" id="imagePreview">
+									<img src="" alt="" class="image-preview_image" id=pImg> 
+									<span class="image-preview_default-text"></span>
+								</div>
+								<input type="file" id="inpFile" name ="inpFile"  />
+								<script>
+									const inpFile = document.getElementById("inpFile");
+									const previewContainer = document.getElementById("imagePreview");
+									const previewImage = previewContainer.querySelector(".image-preview_image");
+									const previewDefaultText = previewContainer.querySelector(".image-preview_default-text");
+									console.log("html script")
+									inpFile.addEventListener("change", function(){
+										const file = this.files[0];
+										console.log("file");
+										console.log(file);
+		
+										if(file){
+											var startingProfileImg = document.getElementById("profile-img");
+											if(startingProfileImg !=null && startingProfileImg != undefined){
+												startingProfileImg.remove();
+											}
+											const reader = new FileReader();
+		
+											previewDefaultText.style.display = "none";
+											previewImage.style.display = "block";
+		
+											reader.addEventListener("load", function(){
+												console.log("this");
+												console.log(this);
+												previewImage.setAttribute("src", this.result); 
+												//updateRequest("http://localhost:8080/api/images", this.result);
+												updateImage(this.result);
+											});
+											reader.readAsDataURL(file);
+										
+										}
+										
+									});
+								</script>
+						</div>
+						
+						
+					</div>
+					<div id="bottom-body">
+						
+						<div id="informations-profile">	
+							<div id="informations-titlebox" class="titlebox">
+								<Span id="informations-title" class="title"> Informacje: <span>
+							</div>
+							<div id="informations-body" class="profilePageBody">
+
+							</div>
+							
+							<!--<button id="informations-editbutton" class="editbutton" onclick="replaceAboutProfileWithEditBox();">Edytuj</button> -->
+						
+						</div>
+						<div id="interestings-profile">	
+							<div id="interestings-titlebox" class="titlebox">
+								<Span id="interestings-title" class="title"> Zainteresowania: <span>
+							</div>
+							<div id="interestings-body" class="profilePageBody">
+
+							</div>
+						
+						<!--	<button id="interestings-editbutton" class="editbutton" onclick="edit()">Edytuj</button> -->
+						</div>
+						<div id="dietary-profile">
+							<div id="dietary-titlebox" class="titlebox">
+								<Span id="dietary-title" class="title"> Preferencje kulinarne: <span>
+							</div>
+							<div id="dietary-body" class="profilePageBody">
+
+							</div>
+							
+						<!--	<button id="dietary-editbutton" class="editbutton" onclick="edit()">Edytuj</button> -->
+						</div>
+						
+						<button id="informations-editbutton" class="editbutton" onclick="replaceAboutProfileWithEditBox();">Edytuj</button>
+						
+					</div>
+				
+				</div>
+					
+					
+					
+					
+					
+			</div>
+
+</body>
+</html>

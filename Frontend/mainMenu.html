@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>DinnerApp</title>
+	<link rel="stylesheet" type="text/css" href="mainMenuStyle.css">
+	<link rel="stylesheet" type="text/css" href="topbar.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="mainMenuScript.js"></script>
+	<script src="mainMenuDropDownList.js"></script>
+	
+
+</head>
+
+<body>
+
+	
+		<div id="topbar">
+		
+			<div class="search-box">
+				<input class ="search-txt" type="text" name="" placeholder="type to search"> </input>
+				<a class="search-btn" href="#">
+				<i class="fa fa-search"></i>
+				</a>
+			</div>
+			
+			<div id="mainmenu-div" class="topbar-section topbar-section-padding" onclick="location.href='mainMenu.html';">
+				<span id="mainmenu-text">Główna</span>
+			</div>
+			<div id="profile-div" class="topbar-section topbar-section-padding" onclick="location.href='myProfilePage.html';">
+					<i  class="fa fa-user-circle fa-2x" aria-hidden="true"></i>
+				<span id="profile-text">Profil</span>
+				
+			</div>
+			<div id="match-div" class="topbar-section topbar-section-padding" onclick="location.href='matchPage.html';">
+				<span id="match-text">Parowanie</span>
+				
+			</div>
+			<div id="invitations-div" class="topbar-section" >
+					<div id = invitations-btn onclick="initInviteList();">
+					<i class="fa fa-user-plus fa-2x" aria-hidden="true" ></i>
+					</div>
+				<!--	<div id="myDropdown" class="dropdown-content">
+
+							<div class="topBarDropDown-entity">
+									<img class="dropdownInv-image" src="img\7.png" onclick="">
+									<span class="dropdownEntity-txt">Kasia Pawlicka</span>
+
+									<div class="accDen-div">
+										<img id="denialInv-btn" class="inv-btn denialInv-btn" src="img\delete.png" onclick="">
+										<img id="acceptInv-btn" class="inv-btn acceptInv-btn" src="img\checked.png" onclick="">
+									</div>
+							</div>
+							<div class="topBarDropDown-entity">	
+								<img class="dropdownInv-image" src="img\14.png" onclick="">
+								<span class="dropdownEntity-txt">Anna Sokoń</span>
+								
+								<div class="accDen-div">
+									<img id="denialInv-btn" class="inv-btn denialInv-btn" src="img\delete.png" onclick="">
+										<img id="acceptInv-btn" class="inv-btn acceptInv-btn" src="img\checked.png" onclick="">
+								</div>
+							</div>
+							<div class="topBarDropDown-entity">
+									<img class="dropdownInv-image" src="img\23.png" onclick="">
+									<span class="dropdownEntity-txt">Paul Gin</span>
+								<div class="accDen-div">
+									<img id="denialInv-btn" class="inv-btn denialInv-btn" src="img\delete.png" onclick="">
+										<img id="acceptInv-btn" class="inv-btn acceptInv-btn" src="img\checked.png" onclick="">
+								</div>
+							</div>
+							
+						
+					
+					</div> --> 
+					<!--<a href="#home">Home</a>
+						<a href="#about">About</a>
+						<a href="#contact">Contact</a> -->
+				</div>
+			<div id="settings-div" class="topbar-section" onclick="showSettingsDropbar();">
+				<div id = settings-btn onclick="">
+					<i class="fa fa-cog fa-3x"></i>
+				</div>
+				<div id="settingsDropdown" >
+					<div class="topBarDropDown-entity" onclick="location.href='changePassword.html';">
+						<span class="dropdownEntity-txt">Zmień hasło</span>
+					</div>
+					<div class="topBarDropDown-entity" onclick="location.href='changePassword.html';">
+						<span class="dropdownEntity-txt">Zmień numer telefonu</span>
+					</div>
+					<div class="topBarDropDown-entity" onclick="location.href='loginPage.html';">
+						<span class="dropdownEntity-txt">Wyloguj</span>
+					</div>
+				</div>
+			</div>
+		
+		</div>
+	
+		<div id="leftbar">
+			<div id="friends-tag" class = "tag">
+				<span class="tag-txt">znajomi</span>
+			</div>
+			<div id="friends-scrollbox">
+				<div id="friends-box">
+									
+				<!--	<div class="leftbar-entity">
+						
+						<div class="profile-image">
+					
+						</div>
+					
+						<span class="entity-txt">name surname</span>
+						<div style="float: right; z-index: 400; width: 40px; height: 40px; background-color: blueviolet;
+						position: relative; top: -6px; left: 0px; right: 0px; bottom: 0px; "  >
+
+						</div>
+					</div>	 --> 
+					
+				</div>
+			</div>
+			
+			<div id="matched-tag" class = "tag">
+				<span class="tag-txt">sparowani</span>
+			</div>
+			<div id="matched-scrollbox">
+				<div id="matched-box">
+					<!-- <div class="leftbar-entity">
+						<div class="profile-image">
+						
+						</div>
+						<span class="entity-txt">name surname</span>
+					
+					</div>  -->
+					
+				</div>
+			</div>
+			<div id="conversation-tag" class = "tag">
+					<span class="tag-txt">konwersacje</span>
+				</div>
+				<div id="conversation-scrollbox">
+					<div id="conversation-box">
+						<!-- <div class="leftbar-entity">
+							<div class="profile-image">
+							
+							</div>
+							<span class="entity-txt">name surname</span>
+						
+						</div>  -->
+						
+						
+					</div>
+					
+				</div>
+				<div id = "newConversation-div">
+
+						<img src="plus.png" id="plus-img"  onclick="showAddConversationPanel();"> <!--onclick="showAddConversationPanel();-->
+				</div>
+				
+				<div id="conversationDropdown" >
+						
+						<span>Nazwa:</span> <input type="text" id ="conversationName"name="conversationName"><br>
+						<span>Dodaj znajomych:</span><br>
+
+						<div id = "suggestionBox">
+								<form autocomplete="off" action="">
+									<div class="autocomplete" style="width:200px;">
+									  <input id="myInput" type="text" name="myCountry" placeholder="dodaj znajomego">
+									</div>
+									<!--<input type="submit" value="Dodaj" onsubmit="submitTest();"> -->
+									
+								  </form>
+								  <button id ="addToConvBar-btn" onclick="testFunction()">Dodaj</button>
+								</div>
+				
+								<script>
+										autocomplete(document.getElementById("myInput"), friendsList());
+										</script>
+								<script>
+									function testFunction(){
+										var chatName = document.getElementById("conversationName").value;
+										if(chatName != null && chatName !="" && chatName != undefined
+										){
+										console.log("testFunction");
+										var inputTxt = document.getElementById("myInput").value;
+										var participantId = getparticipantId(inputTxt);
+										addParticipantsToCustomConversation( participantId);
+										document.getElementById("myInput").value = "";
+										}
+										
+										
+
+									}
+								</script>
+
+						<div id = "addParticipants-div" class="addParticipants-div" style=" overflow: auto; height: 75px;;">
+							
+						</div>
+
+				</div>
+		</div>
+
+		
+	<div id="backgroundDiv">
+		<div id="middlebar">
+			
+			
+			<div id="chat-header">
+				
+				<img src="mapa.png" id="map" class="chat-head-img"  onclick="location.href='map.html';">
+				 <img src="add-friend.png" id ="addFriend-btn" class="chat-head-img" onclick="addFriend();">	
+				 <img src ="img\add.png" id = "addToConv-btn" onclick="addToConvChat()">
+				
+				
+				<!--<span>Mateusz Marciniak</span>
+				<span>Erwin Brzycki</span>
+				<span>Kamil Zawada</span> -->
+			</div>
+			<div id="addToConvChatPanel">
+						<span>Dodaj znajomych:</span><br>
+
+						<div id = "suggestionBoxChat">
+								<form autocomplete="off" action="">
+									<div class="autocomplete" style="width:200px;">
+									  <input id="convParticipantInput" type="text" name="myCountry" placeholder="dodaj znajomego">
+									</div>
+									<!--<input type="submit" value="Dodaj" onsubmit="submitTest();"> -->
+									
+								  </form>
+								  <button id ="addToConvChat-btn" onclick="addParticipantToChat()">Dodaj</button>
+								</div>
+				
+								<script>
+										autocomplete(document.getElementById("convParticipantInput"), friendsList());
+								</script>
+
+								<script>
+									function addParticipantToChat(){
+										console.log("testFunction");
+										var inputTxt = document.getElementById("convParticipantInput").value;
+										var participantId = getparticipantId(inputTxt);
+										var conversationId = getActualConversationId();
+										addParticipantsToChatConversation(conversationId, participantId);
+										document.getElementById("myInput").value = "";
+
+									}
+								</script>
+
+						<div id = "addParticipantsChat-div" class="addParticipants-div" style=" overflow: auto; height: 75px;;">
+							
+						</div>
+			</div>
+
+			<div id="chat-body">
+				
+			</div>
+			<div id="chat-bottom">
+				<input type="text" name="" placeholder="pisz ... " id="message-box">
+			<img src="send-button.png" id="message_button" onclick="sendService();">
+			</div>
+		
+		</div>
+
+	</div>
+
+</body>
+</html>
