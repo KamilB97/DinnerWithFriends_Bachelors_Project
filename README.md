@@ -11,7 +11,7 @@ Bachelor's project
 ## Browser application
 
 ### Login page 
-<img src="readme_images/browser/login.PNG">
+<img src="readme_images/browser/login.PNG" width=400>
 
 ### Registration page 
 <img src="readme_images/browser/registration.PNG">
@@ -49,31 +49,31 @@ Bachelor's project
 ## Mobile Application
 
 ### Login view 
-<img src="readme_images/mobile_app/login.png">
+<img src="readme_images/mobile_app/login.png" width=400>
 
 ### Main view 
-<img src="readme_images/mobile_app/menu.png">
+<img src="readme_images/mobile_app/menu.png" width=400>
 
 ### My profile view 
-<img src="readme_images/mobile_app/MyProfile.png">
+<img src="readme_images/mobile_app/MyProfile.png" width=400>
 
-<img src="readme_images/mobile_app/MyProfile-description_after_swap_down.png">
+<img src="readme_images/mobile_app/MyProfile-description_after_swap_down.png" width=100>
 
 ### Add friends view 
-<img src="readme_images/mobile_app/add_friends.png">
+<img src="readme_images/mobile_app/add_friends.png" width=100>
 
 ### Matching view 
-<img src="readme_images/mobile_app/Screenshot_20191205-155245.png.png">
+<img src="readme_images/mobile_app/Screenshot_20191205-155245.png.png" width=100>
 
-<img src="readme_images/mobile_app/Screenshot_20191205-155253.png.png">
+<img src="readme_images/mobile_app/Screenshot_20191205-155253.png.png" width=100>
 
-<img src="readme_images/mobile_app/matching_swap_annimation_v1.png">
+<img src="readme_images/mobile_app/matching_swap_annimation_v1.png" width=100>
 
 ### Friends list view 
 
-<img src="readme_images/mobile_app/Friends%list.png">
+<img src="readme_images/mobile_app/Friends%list.png" width=100>
 
-<img src="readme_images/mobile_app/Texting_interpersona.png">
+<img src="readme_images/mobile_app/Texting_interpersona.png" width=100>
 
 ### User Profile view 
 
