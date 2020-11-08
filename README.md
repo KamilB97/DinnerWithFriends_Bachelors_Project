@@ -6,56 +6,56 @@ Bachelor's project
 ## Technology stack
 
 ## Database schema
-<img src="readme_images/database/db_schema.png">
+<img src="readme_images/database/db_schema.png" >
 
 ## Browser application
 
 ### Login page 
-<img src="readme_images/browser/login.PNG" width=400>
+<img src="readme_images/browser/login.PNG" width="70%">
 
 ### Registration page 
-<img src="readme_images/browser/registration.PNG">
+<img src="readme_images/browser/registration.PNG" width="70%">
 
 ### User profile 
-<img src="readme_images/browser/my_profile_edit.PNG">
+<img src="readme_images/browser/my_profile_edit.PNG" width="70%">
 
 ### User profile edit option
-<img src="readme_images/browser/my_profile_edit.PNG">
+<img src="readme_images/browser/my_profile_edit.PNG" width="70%">
 
 ### Main board 
-<img src="readme_images/browser/main_board.PNG">
+<img src="readme_images/browser/main_board.PNG" width="70%">
 
 ### Accept friends 
-<img src="readme_images/browser/accept_friends.PNG">
+<img src="readme_images/browser/accept_friends.PNG" width="40%">
 
 ### Texting interpersonal 
-<img src="readme_images/browser/texting_interpersonal.PNG">
+<img src="readme_images/browser/texting_interpersonal.PNG" width="70%">
 
 ### Texting within conversation group 
-<img src="readme_images/browser/texting_group.PNG">
+<img src="readme_images/browser/texting_group.PNG" width="70%">
 
 ### Add to conversation group 
-<img src="readme_images/browser/add_to_group.PNG">
+<img src="readme_images/browser/add_to_group.PNG" width="70%">
 
 ### Find restaurant
-<img src="readme_images/browser/map_find_locals.PNG">
+<img src="readme_images/browser/map_find_locals.PNG" width="70%">
 
 ### Find restaurant
-<img src="readme_images/browser/map_walk.PNG">
+<img src="readme_images/browser/map_walk.PNG" width="70%">
 
 ### Matching 
-<img src="readme_images/browser/matching.PNG">
+<img src="readme_images/browser/matching.PNG" width="70%">
 
 ## Mobile Application
 
 ### Login view 
-<img src="readme_images/mobile_app/login.png" width=400>
+<img src="readme_images/mobile_app/login.png" width="30%">
 
 ### Main view 
-<img src="readme_images/mobile_app/menu.png" width=400>
+<img src="readme_images/mobile_app/menu.png" width="30%">
 
 ### My profile view 
-<img src="readme_images/mobile_app/MyProfile.png" width=400>
+<img src="readme_images/mobile_app/MyProfile.png" width=280>
 
 <img src="readme_images/mobile_app/MyProfile-description_after_swap_down.png" width=100>
 
