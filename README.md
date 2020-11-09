@@ -48,7 +48,7 @@ Bachelor's project
 
 </br>
 <p align="center">
-<img src="readme_images/database/db_schema.png" width="90%" title="Title Tag Goes Here" src="image.png" alt="Your Alt Tag is Here">
+<img src="readme_images/database/db_schema.png" width="90%">
 </P>
 </br>
 
