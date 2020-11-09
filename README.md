@@ -272,70 +272,87 @@ Exported Postman API is available in Postman_api folder
 
 </br>
 **Delete friend**
+
 #### `/api/friends/delete/{first profileID}/{second profile ID}`
 
 </br>
 **Send friend invitation**
+
 #### `/api/invitations/{sender's profileId}/{receiver's profileID}`
 
 </br>
 **Return list of invitation sent to profile**
+
 #### `/api/invitations/{profileID}`
 
 </br>
 **Accept friend invitation**
+
 #### `/api/invitations/accept/{invitationID}`
 
 </br>
 **Denial friend invitation**
+
 #### `/api/invitations/denial/{invitationID}`
 
 </br>
 **Returns list of matched person**
+
 #### `/api/matcher/matches/{profileID}`
 
 </br>
 **Returns message list for conversation group**
+
 #### `/api/messages/{conversationID}/{profileID}`
 
 </br>
 **Returns myProfile all information**
+
 #### `/api/profiles/myprofile/{profileID}`
 
 </br>
 **Returns (not all) information about profile**
+
 #### `/api/profiles/{profileID}`
 
 `</br>
 **Returns list with id of conversations with unreaded messages**
+
 #### `/api/messages/unread/{profileID}`
 
 </br>
 **Returns boolean value if user have unreaded messages for particular conversation**
+
 #### `/api/messages/unread/{conversationID}/{profileID}`
 
 </br>
 **Return list of conversation group members**
+
 #### `/api/conversations/participants/{profileID}`
 
 </br>
 **Delete particular member from conversation group**
+
 #### `/api/conversations/participants/delete/{conversationID}/{profileID}`
 
 </br>
 **Returns list of sugested (matched by interestings, dietary preferences and localization) people for particular profile**
+
 #### `/api/matcher/candidates/{profileID}`
 
 </br>
 **Update information about user choices at matching screen (used to upload user decision if he want to make an aquaintance with sugested person or not)**
+
 #### `/api/matcher/updateswipe/{ProfileID with higher ID}/{ProfileID with lower ID}/{ProfileID of person who upload info}/{holds "1"- if not interested, "2"- if interested}`
 
 </br>
 **Returns list of conversation groups (made by user)**
+
 #### `/api/conversations/custom/{profileID}`
 
 </br>
 **Returns middle localization cords between conversation group participants and dominating culinary type**
+
 #### `/api/conversations/participants/longlat/{conversationID}`
 
 </br>
