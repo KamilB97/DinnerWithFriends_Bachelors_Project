@@ -243,23 +243,23 @@ Exported Postman API is available in Postman_api folder
 
 ## Static information to show user
 
-Shows available countries to choose 
+** Shows available countries to choose **
 
 #### `/api/countries` 
 
-Shows available cities to choose 
+** Shows available cities to choose **
 
 #### `/api/cities`
 
-Shows available provinces to choose 
+** Shows available provinces to choose **
 
 #### `/api/provinces`
 
-Shows available interestings to choose 
+** Shows available interestings to choose **
 
 #### `/api/interestings`
 
-Shows available dietary preferences to choose 
+** Shows available dietary preferences to choose **
 
 #### `/api/dietarypreferences` 
 
@@ -279,47 +279,47 @@ Shows available dietary preferences to choose
 
 #### `/api/invitations/denial/{invitationID}`
 
-Returns list of matched person
+** Returns list of matched person **
 #### `/api/matcher/matches/{profileID}`
 
-Returns message list for conversation group
+** Returns message list for conversation group **
 #### `/api/messages/{conversationID}/{profileID}`
 
-Returns myProfile all information
+** Returns myProfile all information **
 #### `/api/profiles/myprofile/{profileID}`
 
-Returns (not all) information about profile
+** Returns (not all) information about profile **
 #### `/api/profiles/{profileID}`
 `
-Returns list with id of conversations with unreaded messages
+** Returns list with id of conversations with unreaded messages **
 #### `/api/messages/unread/{profileID}`
 
-Returns boolean value if user have unreaded messages for particular conversation
+** Returns boolean value if user have unreaded messages for particular conversation **
 #### `/api/messages/unread/{conversationID}/{profileID}`
 
-Return list of conversation group members
+** Return list of conversation group members **
 #### `/api/conversations/participants/{profileID}`
 
-Delete particular member from conversation group
+** Delete particular member from conversation group **
 #### `/api/conversations/participants/delete/{conversationID}/{profileID}`
 
-Returns list of sugested (matched by interestings, dietary preferences and localization) people for particular profile
+** Returns list of sugested (matched by interestings, dietary preferences and localization) people for particular profile **
 #### `/api/matcher/candidates/{profileID}`
 
-Update information about user choices at matching screen (used to upload user decision if he want to make an aquaintance with sugested person or not )
+** Update information about user choices at matching screen (used to upload user decision if he want to make an aquaintance with sugested person or not) **
 #### `/api/matcher/updateswipe/{ProfileID with higher ID}/{ProfileID with lower ID}/{ProfileID of person who upload info}/{holds "1"- if not interested, "2"- if interested}`
 
-Returns list of conversation groups (made by user)
+** Returns list of conversation groups (made by user) **
 #### `/api/conversations/custom/{profileID}`
 
-Returns middle localization cords between conversation group participants and dominating culinary type
+** Returns middle localization cords between conversation group participants and dominating culinary type **
 #### `/api/conversations/participants/longlat/{conversationID}`
 
 </br>
 
 ## POST Endpoints
 
-Login
+** Login **
 #### `/login`
 Body example
 #### {</br>
@@ -327,7 +327,7 @@ Body example
 "password":"kamil1997"</br>
 }
 
-Register
+** Register **
 #### `/register`
 Body example
 #### {</br>
@@ -338,7 +338,7 @@ Body example
 
 }
 
-Send message
+**  Send message **** 
 #### `/api/messages`
 Body example
 #### { </br>
@@ -354,14 +354,14 @@ Body example
         }
 }
 
-Check if inserted e-mail is available (account with that email do not exist in database)
+** Check if inserted e-mail is available (account with that email do not exist in database) **
 #### `/api/emails`
 Body example
 #### {</br>
 	"email": "grcza@gmail.com"</br>
 }
 
-Update profile description
+** Update profile description **
 #### `/api/profiles/about`
 Body example
 #### {</br>
@@ -369,7 +369,7 @@ Body example
 "about" : " testing about note "</br>
 }
 
-Upload/ update profile image
+** Upload/ update profile image **
 #### `/api/images`
 Body example
 #### {</br>
@@ -377,7 +377,7 @@ Body example
 	"imageUrl" : "lcxsdasfsddfsfsdfsadfbdfgdsfgdfsgasdfsreagwgsadfsdffsfjfhsdfsadfsdfsfsfsflcxsdasfsddfssdfsadfbdfgdsfgdfsgasdfsreagwgsadfsdffsfjfhsdfsadfsdfsfsfslcxsdasfsddfssdfsadfbdfgdsfgdfsgasdfsreagwgsadfsdffsfjfhsdfsadfsdfsfsfss"</br>
 }
 
-Create new conversation
+** Create new conversation **
 #### `/api/conversations/custom`
 Body example
 #### {</br>
@@ -410,7 +410,7 @@ Body example
 
 ## PUT Endpoints
 
-Update profile information
+** Update profile information **
 #### `/api/profiles`
 Body example
 #### {</br>
@@ -429,7 +429,7 @@ Body example
 "interestings" : [1,4,5]</br>
 }</br>
 
-Change password
+** Change password **
 #### `/api/users/password`
 Body example
 #### {</br>
