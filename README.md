@@ -319,8 +319,18 @@ Returns middle localization cords between conversation group participants and do
 
 ## POST Endpoints
 
+Login
 #### `/login`
+Body
+#### `{
 
+"email" : "kamilbrzycki@gmail.com",
+"phone" : "796112221",
+"password" : "kamil1997"
+
+}`
+
+Register
 #### `/register`
 
 Send message
