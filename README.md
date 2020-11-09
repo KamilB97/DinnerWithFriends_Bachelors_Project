@@ -13,9 +13,15 @@ Bachelor's project
 4. [ Browser application images ](#browser)
 4. [ Mobile application images ](#mobile)
 
+</br>
+
 <a name="features"></a>
 ## Features
 
+</br>
+
+
+</br>
 
 <a name="technologies"></a>
 ## Technology stack
