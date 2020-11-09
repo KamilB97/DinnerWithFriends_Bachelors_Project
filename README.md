@@ -27,8 +27,6 @@ Bachelor's project
 <a name="technologies"></a>
 ## Technology stack
 
-</br>
-
 ### Server site
 * Spring Boot
 * Hibernate
