@@ -242,23 +242,23 @@ Exported Postman API is available in Postman_api folder
 
 ## Static information to show user
 
-Shows availavle countries to choose 
+Shows available countries to choose 
 
-### `/api/countries`
+### `/api/countries` #####
 
-Shows availavle cities to choose 
+Shows available cities to choose 
 
 ### `/api/cities`
 
-Shows availavle provinces to choose 
+Shows available provinces to choose 
 
 ### `/api/provinces`
 
-Shows availavle interestings to choose 
+Shows available interestings to choose 
 
 ### `/api/interestings`
 
-Shows availavle dietary preferences to choose 
+Shows available dietary preferences to choose 
 
 ### `/api/dietarypreferences`
 
