@@ -40,6 +40,8 @@ Bachelor's project
 ### Mobile Application
 * Android
 
+</br>
+
 <a name="database"></a>
 # Database schema
 
