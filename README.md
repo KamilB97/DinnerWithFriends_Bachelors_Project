@@ -321,11 +321,11 @@ Returns middle localization cords between conversation group participants and do
 
 Login
 #### `/login`
-Body
+Body example
 #### `{
 
-"email" : "kamilbrzycki@gmail.com",
-"phone" : "796112221",
+"email" : "kamilbrzycki@gmail.com",</br>
+"phone" : "796112221",</br>
 "password" : "kamil1997"
 
 }`
