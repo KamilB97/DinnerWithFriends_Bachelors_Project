@@ -236,4 +236,31 @@ Bachelor's project
 <a name="technologies"></a>
 # API
 
+Exported Postman API is available in Postman_api folder
+
 </br>
+
+## Static information to show user
+
+Shows availavle countries to choose 
+
+### `/api/countries`
+
+Shows availavle cities to choose 
+
+### `/api/cities`
+
+Shows availavle provinces to choose 
+
+### `/api/provinces`
+
+Shows availavle interestings to choose 
+
+### `/api/interestings`
+
+Shows availavle dietary preferences to choose 
+
+### `/api/dietarypreferences`
+
+## Profile
+
