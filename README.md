@@ -1,8 +1,17 @@
 # DinnerWithFriends_Bachelors_Project
 Bachelor's project
 
+1. [ Features ](#features)
+2. [ Technology stack ](#technologies)
+3. [ Database schema ](#database)
+4. [ Browser application images ](#browser)
+4. [ Mobile application images ](#mobile)
+
+<a name="features"></a>
 ## Features
 
+
+<a name="technologies"></a>
 ## Technology stack
 
 ### Server site
@@ -19,6 +28,7 @@ Bachelor's project
 ### Mobile Application
 * Android
 
+<a name="database"></a>
 # Database schema
 
 </br>
@@ -27,6 +37,7 @@ Bachelor's project
 </P>
 </br>
 
+<a name="browser"></a>
 # Browser application
 
 ## Login page 
@@ -125,6 +136,7 @@ Bachelor's project
 </p>
 </br>
 
+<a name="mobile"></a>
 # Mobile Application
 
 ## Login view 
