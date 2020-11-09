@@ -27,6 +27,8 @@ Bachelor's project
 <a name="technologies"></a>
 ## Technology stack
 
+</br>
+
 ### Server site
 * Spring Boot
 * Hibernate
@@ -54,6 +56,9 @@ Bachelor's project
 
 <a name="browser"></a>
 # Browser application
+
+</br>
+</br>
 
 ## Login page 
 
@@ -154,6 +159,9 @@ Bachelor's project
 <a name="mobile"></a>
 # Mobile Application
 
+</br>
+</br>
+
 ## Login view 
 
 </br>
@@ -224,6 +232,7 @@ Bachelor's project
 <p align="center">
 <img src="readme_images/mobile_app/chat_after_match.png" width="30%" hspace="5%"><img src="readme_images/mobile_app/matched_list.png" width="30%">
 </p>
+</br>
 </br>
 
 <a name="technologies"></a>
