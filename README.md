@@ -307,7 +307,7 @@ Returns list of sugested (matched by interestings, dietary preferences and local
 #### `/api/matcher/candidates/{profileID}`
 
 Update information about user choices at matching screen (used to upload user decision if he want to make an aquaintance with sugested person or not )
-#### `/api/matcher/updateswipe/{ProfileID with higher ID}/{ProfileID with lower ID}/{ProfileID of person who upload info}/{value 1- if not interested, 2- if interested}`
+#### `/api/matcher/updateswipe/{ProfileID with higher ID}/{ProfileID with lower ID}/{ProfileID of person who upload info}/{holds "1"- if not interested, "2"- if interested}`
 
 Returns list of conversation groups (made by user)
 #### `/api/conversations/custom/{profileID}`
@@ -322,31 +322,89 @@ Returns middle localization cords between conversation group participants and do
 Login
 #### `/login`
 Body example
-#### {
-
-"email" : "kamilbrzycki@gmail.com",</br>
-"phone" : "796112221",</br>
-"password" : "kamil1997"
-
+#### {</br>
+"username":"kamilbrzycki@gmail.com",</br>
+"password":"kamil1997"</br>
 }
 
 Register
 #### `/register`
+Body example
+#### {</br>
+
+"email" : "kamilbrzycki@gmail.com",</br>
+"phone" : "796112221",</br>
+"password" : "kamil1997"</br>
+
+}
 
 Send message
 #### `/api/messages`
+Body example
+#### { </br>
+"profile": {</br>
+            "profileId": 35,</br>
+            "name": "Cherry",</br>
+            "surname": "Johnson"</br>
+        },</br>
+        "conversationId": 33,</br>
+        "messageInfo": {</br>
+            "messageTxt": "Halko, test powiadomień",</br>
+            "date": "2019-10-15 23:28:29"</br>
+        }
+}
 
 Check if inserted e-mail is available (account with that email do not exist in database)
 #### `/api/emails`
+Body example
+#### {</br>
+	"email": "grcza@gmail.com"</br>
+}
 
 Update profile description
 #### `/api/profiles/about`
+Body example
+#### {</br>
+"profileId" : 32, </br>
+"about" : " testing about note "</br>
+}
 
 Upload/ update profile image
 #### `/api/images`
+Body example
+#### {</br>
+	"profileId" : 5,</br>
+	"imageUrl" : "lcxsdasfsddfsfsdfsadfbdfgdsfgdfsgasdfsreagwgsadfsdffsfjfhsdfsadfsdfsfsfsflcxsdasfsddfssdfsadfbdfgdsfgdfsgasdfsreagwgsadfsdffsfjfhsdfsadfsdfsfsfslcxsdasfsddfssdfsadfbdfgdsfgdfsgasdfsreagwgsadfsdffsfjfhsdfsadfsdfsfsfss"</br>
+}
 
 Create new conversation
 #### `/api/conversations/custom`
+Body example
+#### {</br>
+"customConversation" : {	</br>
+"name" : "Not exactly what you think",</br>
+"customCreated" : 1</br>
+},</br>
+"participants" : [</br>
+	{</br>
+	"profileId" : 10,</br>
+	"name" : "Tyler",</br>
+	"surname" : "Spencer"</br>
+	},</br>
+	{</br>
+	"profileId" : 38,</br>
+	"name" : "Kamil",</br>
+	"surname" :  "Brzycki"</br>
+	},</br>
+	{</br>
+	"profileId" : 15,</br>
+	"name" : "Lana",</br>
+	"surname" : "Myers"</br>
+	}</br>
+	
+]</br>
+}
+
 
 </br>
 
@@ -354,6 +412,28 @@ Create new conversation
 
 Update profile information
 #### `/api/profiles`
+Body example
+#### {</br>
+"profileId":31,</br>
+"userId" : 31,</br>
+"firstName" : "Gosia",</br>
+"lastName" : "Bączar",</br>
+"gender" : "female",</br>
+"age" : 22,</br>
+
+"cityId" : 1,</br>
+"about" : "FFull passion economist, likes football, voleyball, eager to meet other pasionats",</br>
+
+"dietary" : [1,3,5],</br>
+
+"interestings" : [1,4,5]</br>
+}</br>
 
 Change password
 #### `/api/users/password`
+Body example
+#### {</br>
+	"userId": 37,</br>
+	"oldPassword": "oldPassword",</br>
+	"newPassword": "newPassword"</br>
+}
