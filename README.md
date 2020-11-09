@@ -245,96 +245,100 @@ Exported Postman API is available in Postman_api folder
 
 Shows available countries to choose 
 
-### `/api/countries` 
+#### `/api/countries` 
 
 Shows available cities to choose 
 
-### `/api/cities`
+#### `/api/cities`
 
 Shows available provinces to choose 
 
-### `/api/provinces`
+#### `/api/provinces`
 
 Shows available interestings to choose 
 
-### `/api/interestings`
+#### `/api/interestings`
 
 Shows available dietary preferences to choose 
 
-### `/api/dietarypreferences` 
+#### `/api/dietarypreferences` 
 
 </br>
 
 ## Profile
 
-### `/api/friends/{profileID}`
+#### `/api/friends/{profileID}`
 
-### `/api/friends/delete/{first profileID}/{second profile ID}`
+#### `/api/friends/delete/{first profileID}/{second profile ID}`
 
-### `/api/invitations/{sender's profileId}/{receiver's profileID}`
+#### `/api/invitations/{sender's profileId}/{receiver's profileID}`
 
-### `/api/invitations/{profileID}`
+#### `/api/invitations/{profileID}`
 
-### `/api/invitations/accept/{invitationID}`
+#### `/api/invitations/accept/{invitationID}`
 
-### `/api/invitations/denial/{invitationID}`
+#### `/api/invitations/denial/{invitationID}`
 
 Returns list of matched person
-### `/api/matcher/matches/{profileID}`
+#### `/api/matcher/matches/{profileID}`
 
 Returns message list for conversation group
-### `/api/messages/{conversationID}/{profileID}`
+#### `/api/messages/{conversationID}/{profileID}`
 
 Returns myProfile all information
-### `/api/profiles/myprofile/{profileID}`
+#### `/api/profiles/myprofile/{profileID}`
 
 Returns (not all) information about profile
-### `/api/profiles/{profileID}`
+#### `/api/profiles/{profileID}`
 `
 Returns list with id of conversations with unreaded messages
-### `/api/messages/unread/{profileID}`
+#### `/api/messages/unread/{profileID}`
 
 Returns boolean value if user have unreaded messages for particular conversation
-### `/api/messages/unread/{conversationID}/{profileID}`
+#### `/api/messages/unread/{conversationID}/{profileID}`
 
 Return list of conversation group members
-### `/api/conversations/participants/{profileID}`
+#### `/api/conversations/participants/{profileID}`
 
 Delete particular member from conversation group
-### `/api/conversations/participants/delete/{conversationID}/{profileID}`
+#### `/api/conversations/participants/delete/{conversationID}/{profileID}`
 
 Returns list of sugested (matched by interestings, dietary preferences and localization) people for particular profile
-### `/api/matcher/candidates/{profileID}`
+#### `/api/matcher/candidates/{profileID}`
 
 Update information about user choices at matching screen (used to upload user decision if he want to make an aquaintance with sugested person or not )
-### `/api/matcher/updateswipe/{ProfileID with higher ID}/{ProfileID with lower ID}/{ProfileID of person who upload info}/{value 1- if not interested, 2- if interested}`
+#### `/api/matcher/updateswipe/{ProfileID with higher ID}/{ProfileID with lower ID}/{ProfileID of person who upload info}/{value 1- if not interested, 2- if interested}`
 
 Returns list of conversation groups (made by user)
-### `/api/conversations/custom/{profileID}`
+#### `/api/conversations/custom/{profileID}`
 
 Returns middle localization cords between conversation group participants and dominating culinary type
-### `/api/conversations/participants/longlat/{conversationID}`
+#### `/api/conversations/participants/longlat/{conversationID}`
+
+</br>
 
 ## POST Endpoints
 
-### `/login`
+#### `/login`
 
-### `/register`
+#### `/register`
 
 Send message
-### `/api/messages`
+#### `/api/messages`
 
 Check if inserted e-mail is available (account with that email do not exist in database)
-### `/api/emails`
+#### `/api/emails`
 
 Update profile description
-### `/api/profiles/about`
+#### `/api/profiles/about`
 
 Upload/ update profile image
-### `/api/images`
+#### `/api/images`
 
 Create new conversation
 #### `/api/conversations/custom`
+
+</br>
 
 ## PUT Endpoints
 
