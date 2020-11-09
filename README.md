@@ -1,6 +1,10 @@
 # DinnerWithFriends_Bachelors_Project
 Bachelor's project
 
+</br>
+# Table of contents
+</br>
+
 1. [ Features ](#features)
 2. [ Technology stack ](#technologies)
 3. [ Database schema ](#database)
