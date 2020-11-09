@@ -271,25 +271,17 @@ Exported Postman API is available in Postman_api folder
 
 #### `/api/friends/{profileID}`
 
-</br>
-
 **Delete friend**
 
 #### `/api/friends/delete/{first profileID}/{second profile ID}`
-
-</br>
 
 **Send friend invitation**
 
 #### `/api/invitations/{sender's profileId}/{receiver's profileID}`
 
-</br>
-
 **Return list of invitation sent to profile**
 
 #### `/api/invitations/{profileID}`
-
-</br>
 
 **Accept friend invitation**
 
