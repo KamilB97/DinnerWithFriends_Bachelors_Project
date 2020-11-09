@@ -334,12 +334,12 @@ Upload/ update profile image
 ### `/api/images`
 
 Create new conversation
-### `/api/conversations/custom`
+#### `/api/conversations/custom`
 
 ## PUT Endpoints
 
 Update profile information
-### `/api/profiles`
+#### `/api/profiles`
 
 Change password
-### `/api/users/password`
+#### `/api/users/password`
