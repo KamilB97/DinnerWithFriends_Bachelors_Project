@@ -62,7 +62,7 @@ Bachelor's project
 
 </br>
 <p align="center">
-<img src="readme_images/browser/login.PNG" width="85%" alt="accessibility text">
+<img src="readme_images/browser/login.PNG" width="85%">
 </P  
 </br>
 
@@ -70,7 +70,7 @@ Bachelor's project
 
 </br>
 <p align="center">
-<img src="readme_images/browser/registration.PNG" width="85%" title="title text">
+<img src="readme_images/browser/registration.PNG" width="85%">
 </p>
 </br>
 
