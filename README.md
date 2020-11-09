@@ -382,7 +382,7 @@ Body example
 #### `/api/emails`
 Body example
 #### {</br>
-	"email": "grcza@gmail.com"</br>
+"email": "grcza@gmail.com"</br>
 }
 
 **Update profile description**
@@ -397,8 +397,8 @@ Body example
 #### `/api/images`
 Body example
 #### {</br>
-	"profileId" : 5,</br>
-	"imageUrl" : "lcxsdasfsddfsfsdfsadfbdfgdsfgdfsgasdfsreagwgsadfsdffsfjfhsdfsadfsdfsfsfsflcxsdasfsddfssdfsadfbdfgdsfgdfsgasdfsreagwgsadfsdffsfjfhsdfsadfsdfsfsfslcxsdasfsddfssdfsadfbdfgdsfgdfsgasdfsreagwgsadfsdffsfjfhsdfsadfsdfsfsfss"</br>
+"profileId" : 5,</br>
+"imageUrl" : "lcxsdasfsddfsfsdfsadfbdfgdsfgdfsgasdfsreagwgsadfsdffsfjfhsdfsadfsdfsfsfsflcxsdasfsddfssdfsadfbdfgdsfgdfsgasdfsreagwgsadfsdffsfjfhsdfsadfsdfsfsfslcxsdasfsddfssdfsadfbdfgdsfgdfsgasdfsreagwgsadfsdffsfjfhsdfsadfsdfsfsfss"</br>
 }
 
 **Create new conversation**
@@ -457,7 +457,7 @@ Body example
 #### `/api/users/password`
 Body example
 #### {</br>
-	"userId": 37,</br>
-	"oldPassword": "oldPassword",</br>
-	"newPassword": "newPassword"</br>
+"userId": 37,</br>
+"oldPassword": "oldPassword",</br>
+"newPassword": "newPassword"</br>
 }
