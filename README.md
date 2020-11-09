@@ -11,7 +11,8 @@ Bachelor's project
 2. [ Technology stack ](#technologies)
 3. [ Database schema ](#database)
 4. [ Browser application images ](#browser)
-4. [ Mobile application images ](#mobile)
+5. [ Mobile application images ](#mobile)
+6. [ API ](#api)
 
 </br>
 
@@ -223,4 +224,9 @@ Bachelor's project
 <p align="center">
 <img src="readme_images/mobile_app/chat_after_match.png" width="30%" hspace="5%"><img src="readme_images/mobile_app/matched_list.png" width="30%">
 </p>
+</br>
+
+<a name="technologies"></a>
+# API
+
 </br>
