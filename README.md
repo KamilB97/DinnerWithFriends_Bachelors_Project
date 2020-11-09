@@ -307,7 +307,7 @@ Returns list of sugested (matched by interestings, dietary preferences and local
 ### `/api/matcher/candidates/{profileID}`
 
 Update information about user choices at matching screen (used to upload user decision if he want to make an aquaintance with sugested person or not )
-### `/api/matcher/updateswipe/{1}/{2}/{3}/{4}`
+### `/api/matcher/updateswipe/{ProfileID with higher ID}/{ProfileID with lower ID}/{ProfileID of person who upload info}/{value 1- if not interested, 2- if interested}`
 
 Returns list of conversation groups (made by user)
 ### `/api/conversations/custom/{profileID}`
@@ -316,3 +316,30 @@ Returns middle localization cords between conversation group participants and do
 ### `/api/conversations/participants/longlat/{conversationID}`
 
 ## POST Endpoints
+
+### `/login`
+
+### `/register`
+
+Send message
+### `/api/messages`
+
+Check if inserted e-mail is available (account with that email do not exist in database)
+### `/api/emails`
+
+Update profile description
+### `/api/profiles/about`
+
+Upload/ update profile image
+### `/api/images`
+
+Create new conversation
+### `/api/conversations/custom`
+
+## PUT Endpoints
+
+Update profile information
+### `/api/profiles`
+
+Change password
+### `/api/users/password`
