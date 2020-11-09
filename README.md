@@ -398,7 +398,7 @@ Body example
 Body example
 #### {</br>
 "profileId" : 5,</br>
-"imageUrl" : "lcxsdasfsddfsfsdfsadfbdfgdsfgdfsgasdfsreagwgsadfsdffsfjfhsdfsadfsdfsfsfsflcxsdasfsddfssdfsadfbdfgdsfgdfsgasdfsreagwgsadfsdffsfjfhsdfsadfsdfsfsfslcxsdasfsddfssdfsadfbdfgdsfgdfsgasdfsreagwgsadfsdffsfjfhsdfsadfsdfsfsfss"</br>
+"imageUrl" : "base64"</br>
 }
 
 **Create new conversation**
