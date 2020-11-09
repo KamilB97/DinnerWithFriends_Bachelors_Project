@@ -244,7 +244,7 @@ Exported Postman API is available in Postman_api folder
 
 Shows available countries to choose 
 
-### `/api/countries` #####
+### `/api/countries` 
 
 Shows available cities to choose 
 
