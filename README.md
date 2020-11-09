@@ -2,7 +2,9 @@
 Bachelor's project
 
 </br>
-# Table of contents
+
+## Table of contents
+
 </br>
 
 1. [ Features ](#features)
