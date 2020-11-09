@@ -322,13 +322,13 @@ Returns middle localization cords between conversation group participants and do
 Login
 #### `/login`
 Body example
-#### `{
+#### {
 
 "email" : "kamilbrzycki@gmail.com",</br>
 "phone" : "796112221",</br>
 "password" : "kamil1997"
 
-}`
+}
 
 Register
 #### `/register`
