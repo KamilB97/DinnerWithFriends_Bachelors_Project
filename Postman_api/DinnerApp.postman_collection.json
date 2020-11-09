@@ -1,0 +1,1335 @@
+{
+	"info": {
+		"_postman_id": "cfc09af2-a566-437e-8d36-b94499bd7c3a",
+		"name": "DinnerApp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET",
+			"item": [
+				{
+					"name": "updateSwipe",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Token eyJhbGciOiJIUzI1NiJ9.eyJzdIiOiJrYW1pbGJyenlja2lAZ21haWwuY29tIiwidXNlcklkIjoiMzgifQ.xIni6vRkXPzPKurjqG1YIa5peXLRfu9kBRkTwLu5S2E"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/matcher/updateswipe/38/37/38/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"matcher",
+								"updateswipe",
+								"38",
+								"37",
+								"38",
+								"2"
+							]
+						},
+						"description": "http://localhost:8080/api/updateswipe/id/senderId/receiverid/like\n\nBASE JEST / SENDER jest ten co otrzymuje\ntarget reciver \n\nprofile i base profile to to samo i ma byc na 2 miesjcu / senderid\n\nEdit: na pierwszym i przed ostatnim miejscu dajemy id tego który otrzymuje propozycję\nczyli jeśli urzytkownik 38 wyszukuje propozycji to:\nid = 38, target np. 16, profileId = 38\nid - 38, sender = 16, receiver - 38"
+					},
+					"response": []
+				},
+				{
+					"name": "getProvinces",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Authorization",
+								"value": "Token eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrYW1pbGJyenlja2lAZ21haWwuY29tIiwidXNlcklkIjoiMzgifQ.xIni6vRkXPzPKurjqG1YIa5peXLRfu9kBRkTwLu5S2E",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/provinces",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"provinces"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getCountries",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Authorization",
+								"value": "Token eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrYW1pbGJyenlja2lAZ21haWwuY29tIiwidXNlcklkIjoiMzgifQ.xIni6vRkXPzPKurjqG1YIa5peXLRfu9kBRkTwLu5S2E",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/countries",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"countries"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getCities",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Authorization",
+								"value": "Token eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrYW1pbGJyenlja2lAZ21haWwuY29tIiwidXNlcklkIjoiMzgifQ.xIni6vRkXPzPKurjqG1YIa5peXLRfu9kBRkTwLu5S2E",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/cities",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"cities"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getFriendsList",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Authorization",
+								"value": "Token eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrYW1pbGJyenlja2lAZ21haWwuY29tIiwidXNlcklkIjoiMzgifQ.xIni6vRkXPzPKurjqG1YIa5peXLRfu9kBRkTwLu5S2E",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/friends/38",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"friends",
+								"38"
+							]
+						},
+						"description": "get friends list for profile "
+					},
+					"response": []
+				},
+				{
+					"name": "deleteFriend",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token eyJhbGciOiJIUzI1NiJ9.eyJzdIiOiJrYW1pbGJyenlja2lAZ21haWwuY29tIiwidXNlcklkIjoiMzgifQ.xIni6vRkXPzPKurjqG1YIa5peXLRfu9kBRkTwLu5S2E",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/friends/delete/1/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"friends",
+								"delete",
+								"1",
+								"2"
+							]
+						},
+						"description": "/friends/delete/{profile1Id}/{profile2Id}"
+					},
+					"response": []
+				},
+				{
+					"name": "sendFriendInvitation",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token eyJhbGciOiJIUzI1NiJ9.eyJzdIiOiJrYW1pbGJyenlja2lAZ21haWwuY29tIiwidXNlcklkIjoiMzgifQ.xIni6vRkXPzPKurjqG1YIa5peXLRfu9kBRkTwLu5S2E",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/invitations/1/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"invitations",
+								"1",
+								"2"
+							]
+						},
+						"description": "/invitations/{senderId}/{receiverId}"
+					},
+					"response": []
+				},
+				{
+					"name": "getInvitationListForProfile",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token eyJhbGciOiJIUzI1NiJ9.eyJzdIiOiJrYW1pbGJyenlja2lAZ21haWwuY29tIiwidXNlcklkIjoiMzgifQ.xIni6vRkXPzPKurjqG1YIa5peXLRfu9kBRkTwLu5S2E",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/invitations/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"invitations",
+								"1"
+							]
+						},
+						"description": "/invitations/{profileId}"
+					},
+					"response": []
+				},
+				{
+					"name": "acceptInvitation",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/invitations/accept/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"invitations",
+								"accept",
+								"1"
+							]
+						},
+						"description": "/invitations/accept/{invitationId}"
+					},
+					"response": []
+				},
+				{
+					"name": "denialInvitation",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token ",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/invitations/denial/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"invitations",
+								"denial",
+								"1"
+							]
+						},
+						"description": "/invitations/denial/{invitationId}"
+					},
+					"response": []
+				},
+				{
+					"name": "getMatchesForProfile",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrYW1pbGJyenlja2lAZ21haWwuY29tIiwidXNlcklkIjoiMzgifQ.xIni6vRkXPzPKurjqG1YIa5peXLRfu9kBRkTwLu5S2E",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/matcher/matches/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"matcher",
+								"matches",
+								"3"
+							]
+						},
+						"description": "/matches/{profileId}\npobiera wszystkie sparowania"
+					},
+					"response": []
+				},
+				{
+					"name": "getMessagesForConversation",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Authorization",
+								"value": "Token eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrYW1pbGJyenlja2lAZ21haWwuY29tIiwidXNlcklkIjoiMzgifQ.xIni6vRkXPzPKurjqG1YIa5peXLRfu9kBRkTwLu5S2E",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/messages/6/20",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"messages",
+								"6",
+								"20"
+							]
+						},
+						"description": "/messages/{conversationId}"
+					},
+					"response": []
+				},
+				{
+					"name": "getInterestings",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token ",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/interestings",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"interestings"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getDietaryPreferences",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token ",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/dietaryPreferences",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"dietaryPreferences"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getMyProfile",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Authorization",
+								"value": "Token eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrYW1pbGJyenlja2lAZ21haWwuY29tIiwidXNlcklkIjoiMzgifQ.xIni6vRkXPzPKurjqG1YIa5peXLRfu9kBRkTwLu5S2E",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/profiles/myprofile/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"profiles",
+								"myprofile",
+								"1"
+							]
+						},
+						"description": "profiles/myprofile/{profileId}"
+					},
+					"response": []
+				},
+				{
+					"name": "getProfileById",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Authorization",
+								"value": "Token eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrYW1pbGJyenlja2lAZ21haWwuY29tIiwidXNlcklkIjoiMzgifQ.xIni6vRkXPzPKurjqG1YIa5peXLRfu9kBRkTwLu5S2E",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/profiles/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"profiles",
+								"1"
+							]
+						},
+						"description": "/profiles/{profileId}"
+					},
+					"response": []
+				},
+				{
+					"name": "unreadConversationsForProfile",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Authorization",
+								"value": "Token eyJhbGciOiJIUzI1NiJ9.eyJzdIiOiJrYW1pbGJyenlja2lAZ21haWwuY29tIiwidXNlcklkIjoiMzgifQ.xIni6vRkXPzPKurjqG1YIa5peXLRfu9kBRkTwLu5S2E",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/messages/unread/38",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"messages",
+								"unread",
+								"38"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "checkForUnreadMessageInConv",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Authorization",
+								"value": "Token eyJhbGciOiJIUzI1NiJ9.eyJzdIiOiJrYW1pbGJyenlja2lAZ21haWwuY29tIiwidXNlcklkIjoiMzgifQ.xIni6vRkXPzPKurjqG1YIa5peXLRfu9kBRkTwLu5S2E",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/messages/unread/11/38",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"messages",
+								"unread",
+								"11",
+								"38"
+							]
+						},
+						"description": "convId/profileId"
+					},
+					"response": []
+				},
+				{
+					"name": "getConversationParticipants",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Authorization",
+								"value": "Token eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrYW1pbGJyenlja2lAZ21haWwuY29tIiwidXNlcklkIjoiMzgifQ.xIni6vRkXPzPKurjqG1YIa5peXLRfu9kBRkTwLu5S2E",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/conversations/participants/37",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"conversations",
+								"participants",
+								"37"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteConversationParticipant",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/conversations/participants/delete/8/26",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"conversations",
+								"participants",
+								"delete",
+								"8",
+								"26"
+							]
+						},
+						"description": "delete/conversationId/profileId"
+					},
+					"response": []
+				},
+				{
+					"name": "getProposedCandidates",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/matcher/candidates/38",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"matcher",
+								"candidates",
+								"38"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getCustomConversationForProfile",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/conversations/custom/38",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"conversations",
+								"custom",
+								"38"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getConversationParticipantsLongLatDiet",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/conversations/participants/longlat/9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"conversations",
+								"participants",
+								"longlat",
+								"9"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "POST",
+			"item": [
+				{
+					"name": "sendMessage",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-Authorization",
+								"value": "Token eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrYW1pbGJyenlja2lAZ21haWwuY29tIiwidXNlcklkIjoiMzgifQ.xIni6vRkXPzPKurjqG1YIa5peXLRfu9kBRkTwLu5S2E",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \"profile\": {\r\n            \"profileId\": 35,\r\n            \"name\": \"Cherry\",\r\n            \"surname\": \"Johnson\"\r\n        },\r\n        \"conversationId\": 33,\r\n        \"messageInfo\": {\r\n            \"messageTxt\": \"Halko, test powiadomień\",\r\n            \"date\": \"2019-10-15 23:28:29\"\r\n        }\r\n}\r\n\r\n",
+							"options": {
+								"raw": {}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/messages",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"messages"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\n\"email\" : \"kamilbrzycki@gmail.com\",\n\"phone\" : \"796112221\",\n\"password\" : \"kamil1997\"\n\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"username\":\"kamilbrzycki@gmail.com\",\"password\":\"kamil1997\"}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createProfile",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Token eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrYW1pbGJyenlja2lAZ21haWwuY29tIiwidXNlcklkIjoiMzgifQ.xIni6vRkXPzPKurjqG1YIa5peXLRfu9kBRkTwLu5S2E",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"userId\" : 40,\n\"firstname\" : \"Kamil\",\n\"lastname\" : \"Brzycki\",\n\"gender\" : \"male\",\n\"age\" : 22,\n\n\"cityId\" : 1,\n\"about\" : \"Full passion economist, likes football, voleyball, eager to meet other pasionats\",\n\n\"dietary\" : [1,3,5],\n\n\"interestings\" : [1,4,5]\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/profiles",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"profiles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateAbout",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrYW1pbGJyenlja2lAZ21haWwuY29tIiwidXNlcklkIjoiMzgifQ.xIni6vRkXPzPKurjqG1YIa5peXLRfu9kBRkTwLu5S2E",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"profileId\" : 32,\n\"about\" : \" testing about note \"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/profiles/about",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"profiles",
+								"about"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "saveImage",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"profileId\" : 5,\n\t\"imageUrl\" : \"lcxsdasfsddfsfsdfsadfbdfgdsfgdfsgasdfsreagwgsadfsdffsfjfhsdfsadfsdfsfsfsflcxsdasfsddfssdfsadfbdfgdsfgdfsgasdfsreagwgsadfsdffsfjfhsdfsadfsdfsfsfslcxsdasfsddfssdfsadfbdfgdsfgdfsgasdfsreagwgsadfsdffsfjfhsdfsadfsdfsfsfss\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/images",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"images"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addCustomConversation",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"customConversation\" : {\t\n\"name\" : \"Not exactly what you think\",\n\"customCreated\" : 1\n},\n\"participants\" : [\n\t{\n\t\"profileId\" : 10,\n\t\"name\" : \"Tyler\",\n\t\"surname\" : \"Spencer\"\n\t},\n\t{\n\t\"profileId\" : 38,\n\t\"name\" : \"Kamil\",\n\t\"surname\" :  \"Brzycki\"\n\t},\n\t{\n\t\"profileId\" : 15,\n\t\"name\" : \"Lana\",\n\t\"surname\" : \"Myers\"\n\t}\n\t\n]\n\t\n\n}\n"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/conversations/custom",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"conversations",
+								"custom"
+							]
+						},
+						"description": "wwith participants"
+					},
+					"response": []
+				},
+				{
+					"name": "addParticipantToConv",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Token eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrYW1pbGJyenlja2lAZ21haWwuY29tIiwidXNlcklkIjoiMzgifQ.xIni6vRkXPzPKurjqG1YIa5peXLRfu9kBRkTwLu5S2E",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"conversationId\": 37,\n\t\"profileId\": 12,\n\t\"active\": 2\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/conversations/participants",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"conversations",
+								"participants"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "isEmailAvailable",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-Authorization",
+								"value": "Token eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrYW1pbGJyenlja2lAZ21haWwuY29tIiwidXNlcklkIjoiMzgifQ.xIni6vRkXPzPKurjqG1YIa5peXLRfu9kBRkTwLu5S2E",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\": \"grcza@gmail.com\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/emails",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"emails"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "PUT",
+			"item": [
+				{
+					"name": "updateProfile",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-Authorization",
+								"value": "Token eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrYW1pbGJyenlja2lAZ21haWwuY29tIiwidXNlcklkIjoiMzgifQ.xIni6vRkXPzPKurjqG1YIa5peXLRfu9kBRkTwLu5S2E",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"profileId\":31,\n\"userId\" : 31,\n\"firstName\" : \"Gosia\",\n\"lastName\" : \"Bączar\",\n\"gender\" : \"female\",\n\"age\" : 22,\n\n\"cityId\" : 1,\n\"about\" : \"FFull passion economist, likes football, voleyball, eager to meet other pasionats\",\n\n\"dietary\" : [1,3,5],\n\n\"interestings\" : [1,4,5]\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/profiles",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"profiles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateUser",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Token ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\n\"email\" : \"BSBBbrzycki@gmail.com\",\n\"phone\" : \"796112221\",\n\"password\" : \"kamil1997\"\n\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updatePassword",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Token eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrYW1pbGJyenlja2lAZ21haWwuY29tIiwidXNlcklkIjoiMzgifQ.xIni6vRkXPzPKurjqG1YIa5peXLRfu9kBRkTwLu5S2E",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"userId\": 37,\n\t\"oldPassword\": \"testHaslo\",\n\t\"newPassword\": \"noweHaslo\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/users/password",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users",
+								"password"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "DELETE",
+			"item": [
+				{
+					"name": "deleteUnreadConversation",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Authorization",
+								"value": "Token eyJhbGciOiJIUzI1NiJ9.eyJzdIiOiJrYW1pbGJyenlja2lAZ21haWwuY29tIiwidXNlcklkIjoiMzgifQ.xIni6vRkXPzPKurjqG1YIa5peXLRfu9kBRkTwLu5S2E",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/messages/unread/delete/10/38",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"messages",
+								"unread",
+								"delete",
+								"10",
+								"38"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Functional Test",
+			"item": [
+				{
+					"name": "startMatchWorkingForParticularPerson",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrYW1pbGJyenlja2lAZ21haWwuY29tIiwidXNlcklkIjoiMzgifQ.xIni6vRkXPzPKurjqG1YIa5peXLRfu9kBRkTwLu5S2E",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/matcher/matchingwork/6/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"matcher",
+								"matchingwork",
+								"6",
+								"1"
+							]
+						},
+						"description": "http://localhost:8080/api/matcher/matchingwork/profileId/City\n"
+					},
+					"response": []
+				},
+				{
+					"name": "getAllProfilesForCity",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token ",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/city/profiles/1/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"city",
+								"profiles",
+								"1",
+								"2"
+							]
+						},
+						"description": "api/city/profiles/{cityId}/{profileId}"
+					},
+					"response": []
+				},
+				{
+					"name": "deleteUser",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/users/1?Authorization=Token ",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users",
+								"1"
+							],
+							"query": [
+								{
+									"key": "Authorization",
+									"value": "Token "
+								}
+							]
+						},
+						"description": "/users/{userId}"
+					},
+					"response": []
+				},
+				{
+					"name": "getUser",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token ",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/users/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users",
+								"1"
+							]
+						},
+						"description": "/users/{userId}"
+					},
+					"response": []
+				},
+				{
+					"name": "getCitiesForProvince",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Authorization",
+								"value": "Token eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrYW1pbGJyenlja2lAZ21haWwuY29tIiwidXNlcklkIjoiMzgifQ.xIni6vRkXPzPKurjqG1YIa5peXLRfu9kBRkTwLu5S2E",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/provinces/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"provinces",
+								"1"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						},
+						"description": "api/provinces/{provinceId}"
+					},
+					"response": []
+				},
+				{
+					"name": "saveUnreadMessForConv",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/messages/unread/save/18/38",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"messages",
+								"unread",
+								"save",
+								"18",
+								"38"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getToken",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"userName\" : \"Kamil@gmail.com\",\n\"userId\" : 123\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/token",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"token"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
