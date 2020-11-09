@@ -239,6 +239,7 @@ Bachelor's project
 Exported Postman API is available in Postman_api folder
 
 </br>
+## GET Endpoints
 
 ## Static information to show user
 
@@ -260,7 +261,58 @@ Shows available interestings to choose
 
 Shows available dietary preferences to choose 
 
-### `/api/dietarypreferences`
+### `/api/dietarypreferences` 
+
+</br>
 
 ## Profile
 
+### `/api/friends/{profileID}`
+
+### `/api/friends/delete/{first profileID}/{second profile ID}`
+
+### `/api/invitations/{sender's profileId}/{receiver's profileID}`
+
+### `/api/invitations/{profileID}`
+
+### `/api/invitations/accept/{invitationID}`
+
+### `/api/invitations/denial/{invitationID}`
+
+Returns list of matched person
+### `/api/matcher/matches/{profileID}`
+
+Returns message list for conversation group
+### `/api/messages/{conversationID}/{profileID}`
+
+Returns myProfile all information
+### `/api/profiles/myprofile/{profileID}`
+
+Returns (not all) information about profile
+### `/api/profiles/{profileID}`
+`
+Returns list with id of conversations with unreaded messages
+### `/api/messages/unread/{profileID}`
+
+Returns boolean value if user have unreaded messages for particular conversation
+### `/api/messages/unread/{conversationID}/{profileID}`
+
+Return list of conversation group members
+### `/api/conversations/participants/{profileID}`
+
+Delete particular member from conversation group
+### `/api/conversations/participants/delete/{conversationID}/{profileID}`
+
+Returns list of sugested (matched by interestings, dietary preferences and localization) people for particular profile
+### `/api/matcher/candidates/{profileID}`
+
+Update information about user choices at matching screen (used to upload user decision if he want to make an aquaintance with sugested person or not )
+### `/api/matcher/updateswipe/{1}/{2}/{3}/{4}`
+
+Returns list of conversation groups (made by user)
+### `/api/conversations/custom/{profileID}`
+
+Returns middle localization cords between conversation group participants and dominating culinary type
+### `/api/conversations/participants/longlat/{conversationID}`
+
+## POST Endpoints
